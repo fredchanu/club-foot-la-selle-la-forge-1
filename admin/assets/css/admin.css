@@ -20,6 +20,6 @@ body {
     color: #ff6600;
     margin: 0;
   }   
-  #admin-wrapper {
+  #admin-wrapper #nc-root .notif__container {
     display: none !important;
   }
