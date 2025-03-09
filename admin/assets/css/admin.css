@@ -20,6 +20,7 @@ body {
     color: #ff6600;
     margin: 0;
   }   
-  #nc-root .nc-editor-page .nc-header{
-     display: none !important;
+  #nc-root .nc-editor-page form {
+    margin-top: 100px; /* Ajustez la valeur selon vos besoins */
   }
+  
