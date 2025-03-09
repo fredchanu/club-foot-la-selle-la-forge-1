@@ -21,15 +21,5 @@ body {
     margin: 0;
   }   
   #nc-root .nc-editor-page .nc-header {
-    position: sticky; /* ou position: fixed */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    background: #fff; /* Ou la couleur que vous souhaitez */
-    border-bottom: 1px solid #ff6600;
+    display: none !important;
   }
-  #nc-root .nc-editor-page form {
-    margin-top: 100px; /* Ajustez la valeur selon vos besoins */
-  }
-  
