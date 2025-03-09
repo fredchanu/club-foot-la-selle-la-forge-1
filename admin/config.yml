@@ -34,7 +34,7 @@ collections:
         summary: "{{nom}} - Convoqué : {{convoque}}"
         fields:
           - { name: "nom", label: "Nom du joueur", widget: "string" }
-          - { name: "convoque", label: "Convoqué ?", widget: "boolean", trueLabel: "Oui", falseLabel: "Non", default: false }
+          - { name: "convoque", label: "Convoqué ?", widget: "select", options: ["Oui", "Non"] }
 
 
 
