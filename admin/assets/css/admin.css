@@ -1,5 +1,5 @@
 body {
-    background: #121212;
+    background: #121212 !important;
     background-attachment: fixed;
     transition: background 0.5s ease-in-out;
     margin: 0;
