@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AS La Selle La Forge - Galerie</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="header-fix">
+    <div class="header-container">
+      <button class="burger-menu" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="calendrier.html">Calendrier</a></li>  
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="club.html">Club</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="btn-convocation" href="convocations.html">Convocation</a></li>
+        </ul>
+      </nav>
+      <a href="admin/index.html" class="login-link" target="_blank">
+        <div class="login-icon">
+          <i class="fa fa-user"></i>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="page-galerie">
+    <section class="galerie-section">
+      <h2>Galerie</h2>
+      <div id="galerie-container"></div>
+      <script>
+        // Chemin vers le manifeste JSON des galeries
+        const manifestUrl = '/galerie.json';
+        const container = document.getElementById('galerie-container');
+      
+        fetch(manifestUrl)
+          .then(response => {
+            if (!response.ok) throw new Error('Erreur réseau lors du chargement du manifeste galerie');
+            return response.json();
+          })
+          .then(galeries => {
+            galeries.forEach(gallery => {
+              const galleryElem = document.createElement('article');
+              galleryElem.className = 'galerie-item';
+              const titleElem = document.createElement('h3');
+              titleElem.textContent = gallery.title;
+              galleryElem.appendChild(titleElem);
+              fetch(gallery.file)
+                .then(resp => {
+                  if (!resp.ok) throw new Error(`Erreur réseau lors du chargement du fichier ${gallery.file}`);
+                  return resp.json();
+                })
+                .then(galleryData => {
+                  const resumeHTML = `<div class="galerie-resume">${galleryData.resume}</div>`;
+                  let photosHTML = '<div class="galerie-photos">';
+                  galleryData.photos.forEach(item => {
+                    const photoPath = (typeof item === 'object' && item.photo) ? item.photo : item;
+                    photosHTML += `<a href="${photoPath}" data-lg-size="1400-933">
+                                     <img src="${photoPath}" alt="${galleryData.title}">
+                                   </a>`;
+                  });
+                  photosHTML += '</div>';
+                  const contentHTML = resumeHTML + photosHTML;
+                  const contentElem = document.createElement('div');
+                  contentElem.innerHTML = contentHTML;
+                  galleryElem.appendChild(contentElem);
+                  const lgContainer = contentElem.querySelector('.galerie-photos');
+                  if (lgContainer) {
+                    lightGallery(lgContainer, {
+                      plugins: [lgThumbnail],
+                      speed: 500,
+                      licenseKey: '0000-0000-000-0000'
+                    });
+                  }
+                })
+                .catch(err => {
+                  console.error('Erreur lors du chargement de la galerie:', err);
+                  galleryElem.innerHTML += '<p>Erreur lors du chargement du contenu de la galerie.</p>';
+                })
+                .finally(() => {
+                  container.appendChild(galleryElem);
+                });
+            });
+          })
+          .catch(error => {
+            console.error('Erreur lors du chargement du manifeste galerie:', error);
+            container.innerHTML = '<p>Erreur lors du chargement de la galerie.</p>';
+          });
+      </script>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="calendrier.html">Calendrier</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="club.html">Club</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="convocations.html">Convocation</a></li>
+        </ul>
+      </div>
+      <div class="footer-legal">
+        <ul>
+          <li><a href="/pages/mentions-legales.html" target="_blank">Mentions légales</a></li>
+          <li><a href="/pages/politique-confidentialite.html" target="_blank">Politique de confidentialité</a></li>
+          <li><a href="/pages/conditions-utilisation.html" target="_blank">Conditions d'utilisation</a></li>
+        </ul>
+      </div>
+      <div class="footer-promo">
+        <p>Site web créé par <strong><a href="https://novatech-studio.com" target="_blank"> Novatech Studio </a></strong> pour AS La Selle La Forge.</p>
+      </div>
+      <div class="footer-copy">
+        <p>© <span id="year"></span> AS La Selle La Forge. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>  
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+</body>
+</html>

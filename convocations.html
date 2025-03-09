@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AS La Selle La Forge - Convocations</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header-fix">
+    <div class="header-container">
+      <button class="burger-menu" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="calendrier.html">Calendrier</a></li>  
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="club.html">Club</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="btn-convocation" href="convocations.html">Convocation</a></li>
+        </ul>
+      </nav>
+      <a href="admin/index.html" class="login-link" target="_blank">
+        <div class="login-icon">
+          <i class="fa fa-user"></i>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="convocation-section">
+      <h2>Convocations</h2>
+      <!-- Menu déroulant pour sélectionner une équipe -->
+      <select id="teamSelect"  class="convocation-select">
+        <option value="">-- Sélectionnez une équipe --</option>
+      </select>
+      <div id="convocations-container"></div>
+      <script>
+        const manifestUrl = '/convocations.json';
+        const container = document.getElementById('convocations-container');
+        const teamSelect = document.getElementById('teamSelect');
+
+        fetch(manifestUrl)
+          .then(response => {
+            if (!response.ok) throw new Error('Erreur lors du chargement du manifeste JSON');
+            return response.json();
+          })
+          .then(convocations => {
+            const teams = [...new Set(convocations.map(c => c.equipe))];
+            teams.forEach(team => {
+              const option = document.createElement('option');
+              option.value = team;
+              option.textContent = team;
+              teamSelect.appendChild(option);
+            });
+
+            function renderTeam(team) {
+              container.innerHTML = '';
+              const teamConvocations = convocations.filter(c => c.equipe === team);
+              if (teamConvocations.length === 0) {
+                container.innerHTML = '<p>Aucune convocation pour cette équipe.</p>';
+                return;
+              }
+              teamConvocations.forEach(conv => {
+                const article = document.createElement('article');
+                article.className = 'convocation-item';
+                article.innerHTML = `
+                  <h3>${conv.match_title || conv.title}</h3>
+                  <p><strong>Date :</strong> ${conv.match_date || conv.date}</p>
+                  <p><strong>Heure :</strong> ${conv.match_time || conv.heure}</p>
+                `;
+                // Si des joueurs sont présents
+                if (conv.joueurs && conv.joueurs.length > 0) {
+                  const playersDiv = document.createElement('div');
+                  conv.joueurs.filter(j => j.convoque).forEach(player => {
+                    const playerCard = document.createElement('div');
+                    playerCard.className = 'player-card';
+                    playerCard.textContent = player.nom;
+                    playersDiv.appendChild(playerCard);
+                  });
+                  article.appendChild(playersDiv);
+                } else {
+                  article.innerHTML += '<p>Aucun joueur convoqué.</p>';
+                }
+                container.appendChild(article);
+              });
+            }
+
+            teamSelect.addEventListener('change', function() {
+              const selectedTeam = teamSelect.value;
+              if (selectedTeam) {
+                renderTeam(selectedTeam);
+              } else {
+                container.innerHTML = '<p>Veuillez sélectionner une équipe.</p>';
+              }
+            });
+            if (teams.length > 0) {
+              teamSelect.value = teams[0];
+              renderTeam(teams[0]);
+            }
+          })
+          .catch(error => {
+            console.error('Erreur lors du chargement du manifeste:', error);
+            container.innerHTML = '<p>Erreur lors du chargement des convocations.</p>';
+          });
+      </script>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="calendrier.html">Calendrier</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="club.html">Club</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="convocations.html">Convocation</a></li>
+        </ul>
+      </div>
+      <div class="footer-legal">
+        <ul>
+          <li><a href="/pages/mentions-legales.html" target="_blank">Mentions légales</a></li>
+          <li><a href="/pages/politique-confidentialite.html" target="_blank">Politique de confidentialité</a></li>
+          <li><a href="/pages/conditions-utilisation.html" target="_blank">Conditions d'utilisation</a></li>
+        </ul>
+      </div>
+      <div class="footer-promo">
+        <p>Site web créé par <strong><a href="https://novatech-studio.com" target="_blank"> Novatech Studio </a></strong> pour AS La Selle La Forge.</p>
+      </div>
+      <div class="footer-copy">
+        <p>© <span id="year"></span> AS La Selle La Forge. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>  
+  
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

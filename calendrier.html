@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AS La Selle La Forge - Calendrier</title>
+  <!-- Styles généraux -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- FullCalendar CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet" />
+  
+  <style>
+    /* Styles spécifiques au Calendrier */
+    #calendar {
+      background: #1a1a1a;
+      color: #eee;
+      border: 2px solid #ff6600;
+      border-radius: 20px;
+      padding: 10px;
+      min-height: 500px;
+      margin: 0 auto;
+    }
+    .fc-event {
+      background-color: #00e5ff !important; /* Fond bleu fluo */
+      color: #fff !important;
+      font-weight: bold;
+    }
+    .fc-event, 
+    .fc-event-title {
+      white-space: normal !important;
+      display: flex !important;
+      flex-direction: column;
+    }
+    /* Personnalisation de la barre d'outils de FullCalendar */
+    .fc-header-toolbar {
+      background: #1a1a1a;
+      border-bottom: 2px solid #ff6600;
+      padding: 10px;
+      border-radius: 10px 10px 0 0;
+    }
+    .fc-toolbar-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      color: #00e5ff;
+    }
+    .fc-button {
+      background: #ff6600;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .fc-button:hover {
+      background: #ff8c00;
+    }
+  </style>
+  
+  <!-- FullCalendar JS -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin";
+          });
+        }
+      });
+    }
+  </script>
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header class="header-fix">
+    <div class="header-container">
+      <!-- Bouton burger, ici positionné à gauche -->
+      <button class="burger-menu" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="calendrier.html">Calendrier</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="club.html">Club</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="btn-convocation" href="convocations.html">Convocation</a></li>
+        </ul>
+      </nav>
+      <a href="admin/index.html" class="login-link" target="_blank">
+        <div class="login-icon"><i class="fa fa-user"></i></div>
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content" style="margin-top:100px;">
+    <section class="section calendrier-section">
+      <h2>Calendrier des Matchs</h2>
+      <div id="calendar"></div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="calendrier.html">Calendrier</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="club.html">Club</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="convocations.html">Convocation</a></li>
+        </ul>
+      </div>
+      <div class="footer-legal">
+        <ul>
+          <li><a href="/pages/mentions-legales.html" target="_blank">Mentions légales</a></li>
+          <li><a href="/pages/politique-confidentialite.html" target="_blank">Politique de confidentialité</a></li>
+          <li><a href="/pages/conditions-utilisation.html" target="_blank">Conditions d'utilisation</a></li>
+        </ul>
+      </div>
+      <div class="footer-promo">
+        <p>Site web créé par <strong><a href="https://novatech-studio.com" target="_blank"> Novatech Studio </a></strong> pour AS La Selle La Forge.</p>
+      </div>
+      <div class="footer-copy">
+        <p>© <span id="year"></span> AS La Selle La Forge. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>  
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      if (!calendarEl) {
+        console.error("L'élément #calendar est introuvable.");
+        return;
+      }
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        locale: 'fr',
+        headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,timeGridDay'
+        }
+        // Vous pouvez ajouter d'autres options ici
+      });
+      
+      // Charger le fichier calendrier.json qui contient les références aux événements
+      fetch('/calendrier.json')
+        .then(response => {
+          if (!response.ok) throw new Error('Erreur réseau lors du chargement du fichier calendrier.json');
+          return response.json();
+        })
+        .then(manifest => {
+          console.log("Manifest calendrier chargé:", manifest);
+          // Pour chaque événement listé dans le manifeste, charger son fichier JSON
+          let eventPromises = manifest.map(entry => {
+            return fetch(entry.file)
+              .then(resp => {
+                if (!resp.ok) throw new Error('Erreur réseau lors du chargement de l\'événement ' + entry.file);
+                return resp.json();
+              })
+              .then(eventData => {
+                // Transformer les données pour FullCalendar.
+                // On suppose ici que eventData contient au moins { title, date, match_details }
+                return {
+                  title: eventData.title,
+                  // Utilisez eventData.date ou eventData.start, ici on va vérifier avec la transformation
+                  date: eventData.date, 
+                  description: eventData.match_details || ''
+                };
+              });
+          });
+    
+          // Utiliser Promise.all pour attendre que tous les événements soient chargés
+          Promise.all(eventPromises)
+            .then(events => {
+              // Transformation pour s'assurer que l'événement a une propriété "start"
+              const formattedEvents = events.map(ev => {
+                // Si "start" n'existe pas mais "date" est fourni, on le convertit
+                if (!ev.start && ev.date) {
+                  ev.start = new Date(ev.date).toISOString();
+                }
+                return ev;
+              });
+              console.log("Événements transformés:", formattedEvents);
+              calendar.addEventSource(formattedEvents);
+              calendar.render();
+            })
+            .catch(err => {
+              console.error('Erreur lors du traitement des événements:', err);
+            });
+        })
+        .catch(error => {
+          console.error('Erreur lors du chargement du manifeste calendrier:', error);
+        });
+    });
+    </script>
+    
+    
+  
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

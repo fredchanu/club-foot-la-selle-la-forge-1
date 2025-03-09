@@ -1,0 +1,12 @@
+{
+  "name": "club-foot-la-selle-la-forge",
+  "version": "1.0.0",
+  "description": "Site du club de football AS La Selle La Forge",
+  "scripts": {
+    "build:manifest": "node generate-manifest.js",
+    "build:manifest:conv": "node generate-convocations-manifest.js",
+    "build:manifest:gal": "node generate-galerie-manifest.js",
+    "build:manifest:cal": "node generate-calendrier-manifest.js",
+    "build": "npm run build:manifest && npm run build:manifest:conv && npm run build:manifest:gal && npm run build:manifest:cal && echo 'No build step'"
+  }
+}

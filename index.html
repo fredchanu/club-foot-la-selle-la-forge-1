@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AS La Selle La Forge - Accueil</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Utilisation de Bebas Neue pour les titres et Montserrat pour le corps -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- FullCalendar (pour la page Calendrier, mais ici on le redirige) -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin";
+          });
+        }
+      });
+    }
+  </script>
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header class="header-fix">
+    <div class="header-container">
+      <!-- Bouton burger affiché sur mobile, positionné à gauche -->
+      <button class="burger-menu" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="calendrier.html">Calendrier</a></li>  
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="club.html">Club</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="btn-convocation" href="convocations.html">Convocation</a></li>
+        </ul>
+      </nav>
+      <a href="admin/index.html" class="login-link" target="_blank">
+        <div class="login-icon">
+          <i class="fa fa-user"></i>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <!-- SECTION HERO -->
+  <section class="hero">
+     <!-- Image de fond avec effet flou et sombre -->
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+      <img src="assets/images/logo.png" alt="Logo AS La Selle La Forge" class="logo-hero" />
+      <h1>AS La Selle La Forge</h1>
+      <p class="hero-subtitle">Le football, une passion qui nous unit</p>
+      <div class="social-frame">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/ASSTANGOS?locale=fr_FR" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/aslasellelaforge/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="follow-text">Suivez-nous</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PREVIEW CALENDRIER -->
+  <section class="preview-section">
+    <div class="preview-card">
+      <h2>Calendrier</h2>
+      <p>Découvrez le planning complet de nos matchs et événements.</p>
+      <a href="calendrier.html" class="btn">Voir le Calendrier</a>
+    </div>
+  </section>
+
+  <!-- SECTION PREVIEW ACTUALITÉS -->
+  <section class="preview-section">
+    <div class="preview-card">
+      <h2>Actualités</h2>
+      <div id="latest-news-container">
+        <!-- Ici, vous pouvez intégrer un code pour charger le dernier article, par exemple via fetch -->
+        <!-- Pour simplifier, on affiche un extrait statique -->
+        <p>Découvrez nos dernières nouvelles et événements marquants du club.</p>
+      </div>
+      <a href="actualites.html" class="btn">Voir toutes les Actualités</a>
+    </div>
+  </section>
+
+  <!-- SECTION CLUB RAPIDE -->
+  <section class="preview-section">
+    <div class="preview-card">
+      <h2>Le Club</h2>
+      <p>
+        AS La Selle La Forge, c’est avant tout une histoire de passion, d’engagement et de réussite sur le terrain.
+      </p>
+      <div class="club-stats">
+        <div class="stat-item">
+          <span>300</span>
+          <p>Licenciés</p>
+        </div>
+        <div class="stat-item">
+          <span>9</span>
+          <p>Équipes</p>
+        </div>
+        <div class="stat-item">
+          <span>7</span>
+          <p>Dirigeants</p>
+        </div>
+        <div class="stat-item">
+          <span>8</span>
+          <p>Récompenses</p>
+        </div>
+    </div>
+    <a href="club.html" class="btn">En savoir plus</a>
+  </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="calendrier.html">Calendrier</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="club.html">Club</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="convocations.html">Convocation</a></li>
+        </ul>
+      </div>
+      <div class="footer-legal">
+        <ul>
+          <li><a href="/pages/mentions-legales.html" target="_blank">Mentions légales</a></li>
+          <li><a href="/pages/politique-confidentialite.html" target="_blank">Politique de confidentialité</a></li>
+          <li><a href="/pages/conditions-utilisation.html" target="_blank">Conditions d'utilisation</a></li>
+        </ul>
+      </div>
+      <div class="footer-promo">
+        <p>Site web créé par <strong><a href="https://novatech-studio.com" target="_blank"> Novatech Studio </a></strong> pour AS La Selle La Forge.</p>
+      </div>
+      <div class="footer-copy">
+        <p>© <span id="year"></span> AS La Selle La Forge. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>  
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

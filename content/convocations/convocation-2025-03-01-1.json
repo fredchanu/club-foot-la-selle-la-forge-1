@@ -1,0 +1,32 @@
+{
+  "joueurs": [
+    {
+      "convoque": true,
+      "nom": "joueur 1"
+    },
+    {
+      "convoque": true,
+      "nom": "joueur 2"
+    },
+    {
+      "convoque": true,
+      "nom": "joueur 3"
+    },
+    {
+      "convoque": true,
+      "nom": "joueur 4"
+    },
+    {
+      "convoque": false,
+      "nom": "joueur 5"
+    },
+    {
+      "convoque": false,
+      "nom": "joueur 6"
+    }
+  ],
+  "equipe": "U9",
+  "match_title": "AS LA SELLE LA FORGE VS MESSEI",
+  "match_date": "16/03/2025",
+  "match_time": "15H"
+}
