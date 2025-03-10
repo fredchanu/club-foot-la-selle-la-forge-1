@@ -49,7 +49,7 @@
         const manifestUrl = '/convocations.json';
         const container = document.getElementById('convocations-container');
         const teamSelect = document.getElementById('teamSelect');
-
+      
         fetch(manifestUrl)
           .then(response => {
             if (!response.ok) throw new Error('Erreur lors du chargement du manifeste JSON');
@@ -63,7 +63,7 @@
               option.textContent = team;
               teamSelect.appendChild(option);
             });
-
+      
             function renderTeam(team) {
               container.innerHTML = '';
               const teamConvocations = convocations.filter(c => c.equipe === team);
@@ -82,7 +82,7 @@
                 // Si des joueurs sont présents
                 if (conv.joueurs && conv.joueurs.length > 0) {
                   const playersDiv = document.createElement('div');
-                  conv.joueurs.filter(j => j.convoque).forEach(player => {
+                  conv.joueurs.filter(j => j.convoque === "Oui").forEach(player => {
                     const playerCard = document.createElement('div');
                     playerCard.className = 'player-card';
                     playerCard.textContent = player.nom;
@@ -95,7 +95,7 @@
                 container.appendChild(article);
               });
             }
-
+      
             teamSelect.addEventListener('change', function() {
               const selectedTeam = teamSelect.value;
               if (selectedTeam) {
@@ -113,7 +113,7 @@
             console.error('Erreur lors du chargement du manifeste:', error);
             container.innerHTML = '<p>Erreur lors du chargement des convocations.</p>';
           });
-      </script>
+      </script>      
     </section>
   </main>
 
