@@ -1,27 +1,27 @@
 {
   "joueurs": [
     {
-      "convoque": true,
+      "convoque": "Oui",
       "nom": "joueur 1"
     },
     {
-      "convoque": true,
+      "convoque": "Oui",
       "nom": "joueur 2"
     },
     {
-      "convoque": true,
+      "convoque": "Non",
       "nom": "joueur 3"
     },
     {
-      "convoque": true,
+      "convoque": "Oui",
       "nom": "joueur 4"
     },
     {
-      "convoque": false,
+      "convoque": "Oui",
       "nom": "joueur 5"
     },
     {
-      "convoque": false,
+      "convoque": "Non",
       "nom": "joueur 6"
     }
   ],
