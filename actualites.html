@@ -89,6 +89,8 @@
         return response.json();
       })
       .then(articles => {
+        articles.reverse();
+        console.log("Articles dans l'ordre inversé :", articles);
         console.log("Manifest actualités chargé:", articles);
         articles.forEach(article => {
           const articleElem = document.createElement('article');
