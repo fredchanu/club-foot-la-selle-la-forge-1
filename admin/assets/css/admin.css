@@ -20,6 +20,6 @@ body {
     color: #ff6600;
     margin: 0;
   } 
-  .css-f3a0ud-NoPreviewContainer-card-splitPane e1pxf6c42 {
-    padding-top: 100px;
-  }
+ .AppHeader {
+display: none !important;
+}
