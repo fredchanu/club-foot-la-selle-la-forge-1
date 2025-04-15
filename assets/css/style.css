@@ -34,7 +34,7 @@ h1, h2, h3, .logo-hero {
   position: sticky;
   top: 0;
   left: 0;
-  height: 60px;
+  height: 80px;
   background: rgba(26, 26, 26, 0.5); 
   z-index: 1000;
 }
