@@ -31,7 +31,7 @@ h1, h2, h3, .logo-hero {
 /* ============================= */
 .header-fix {
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   height: 60px;
