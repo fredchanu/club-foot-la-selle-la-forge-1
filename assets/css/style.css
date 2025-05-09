@@ -698,7 +698,8 @@ h1, h2, h3, .logo-hero {
 
 .objet h3 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  color: #ff6600;
 }
 
 .objet p {
