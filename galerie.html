@@ -50,60 +50,72 @@
         // Chemin vers le manifeste JSON des galeries
         const manifestUrl = '/galerie.json';
         const container = document.getElementById('galerie-container');
-      
-        fetch(manifestUrl)
-          .then(response => {
-            if (!response.ok) throw new Error('Erreur réseau lors du chargement du manifeste galerie');
-            return response.json();
-          })
-          .then(galeries => {
-            galeries.forEach(gallery => {
-              const galleryElem = document.createElement('article');
-              galleryElem.className = 'galerie-item';
-              const titleElem = document.createElement('h3');
-              titleElem.textContent = gallery.title;
-              galleryElem.appendChild(titleElem);
-              fetch(gallery.file)
-                .then(resp => {
-                  if (!resp.ok) throw new Error(`Erreur réseau lors du chargement du fichier ${gallery.file}`);
-                  return resp.json();
-                })
-                .then(galleryData => {
-                  const resumeHTML = `<div class="galerie-resume">${galleryData.resume}</div>`;
-                  let photosHTML = '<div class="galerie-photos">';
-                  galleryData.photos.forEach(item => {
-                    const photoPath = (typeof item === 'object' && item.photo) ? item.photo : item;
-                    photosHTML += `<a href="${photoPath}" data-lg-size="1400-933">
-                                     <img src="${photoPath}" alt="${galleryData.title}">
-                                   </a>`;
-                  });
-                  photosHTML += '</div>';
-                  const contentHTML = resumeHTML + photosHTML;
-                  const contentElem = document.createElement('div');
-                  contentElem.innerHTML = contentHTML;
-                  galleryElem.appendChild(contentElem);
-                  const lgContainer = contentElem.querySelector('.galerie-photos');
-                  if (lgContainer) {
-                    lightGallery(lgContainer, {
-                      plugins: [lgThumbnail],
-                      speed: 500,
-                      licenseKey: '0000-0000-000-0000'
-                    });
-                  }
-                })
-                .catch(err => {
-                  console.error('Erreur lors du chargement de la galerie:', err);
-                  galleryElem.innerHTML += '<p>Erreur lors du chargement du contenu de la galerie.</p>';
-                })
-                .finally(() => {
-                  container.appendChild(galleryElem);
-                });
-            });
-          })
-          .catch(error => {
-            console.error('Erreur lors du chargement du manifeste galerie:', error);
-            container.innerHTML = '<p>Erreur lors du chargement de la galerie.</p>';
-          });
+
+fetch(manifestUrl)
+  .then(response => {
+    if (!response.ok) throw new Error('Erreur réseau lors du chargement du manifeste galerie');
+    return response.json();
+  })
+  .then(galeries => {
+    // ✅ Tri décroissant par nom de fichier
+    galeries.sort((a, b) => b.file.localeCompare(a.file));
+
+    const fetchPromises = galeries.map(gallery =>
+      fetch(gallery.file)
+        .then(resp => {
+          if (!resp.ok) throw new Error(`Erreur réseau lors du chargement du fichier ${gallery.file}`);
+          return resp.json();
+        })
+        .then(galleryData => ({
+          ...galleryData,
+          title: gallery.title,
+          file: gallery.file
+        }))
+    );
+
+    return Promise.all(fetchPromises);
+  })
+  .then(galleriesData => {
+    galleriesData.forEach(gallery => {
+      const galleryElem = document.createElement('article');
+      galleryElem.className = 'galerie-item';
+
+      const titleElem = document.createElement('h3');
+      titleElem.textContent = gallery.title;
+      galleryElem.appendChild(titleElem);
+
+      const resumeHTML = `<div class="galerie-resume">${gallery.resume || ''}</div>`;
+      let photosHTML = '<div class="galerie-photos">';
+
+      gallery.photos.forEach(item => {
+        const photoPath = (typeof item === 'object' && item.photo) ? item.photo : item;
+        photosHTML += `<a href="${photoPath}" data-lg-size="1400-933">
+                         <img src="${photoPath}" alt="${gallery.title}">
+                       </a>`;
+      });
+
+      photosHTML += '</div>';
+      const contentHTML = resumeHTML + photosHTML;
+      const contentElem = document.createElement('div');
+      contentElem.innerHTML = contentHTML;
+      galleryElem.appendChild(contentElem);
+
+      const lgContainer = contentElem.querySelector('.galerie-photos');
+      if (lgContainer) {
+        lightGallery(lgContainer, {
+          plugins: [lgThumbnail],
+          speed: 500,
+          licenseKey: '0000-0000-000-0000'
+        });
+      }
+
+      container.appendChild(galleryElem);
+    });
+  })
+  .catch(error => {
+    console.error('Erreur lors du chargement des galeries:', error);
+    container.innerHTML = '<p>Erreur lors du chargement de la galerie.</p>';
+  });
       </script>
     </section>
   </main>
