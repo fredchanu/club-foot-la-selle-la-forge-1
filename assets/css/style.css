@@ -667,28 +667,47 @@ h1, h2, h3, .logo-hero {
 /* ============================= */
 /*  PAGE OBJETS TROUVÉS          */
 /* ============================= */
+.objets-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
 .objet {
   background: #1e1e1e;
+  color: #fff;
   border-radius: 8px;
   padding: 16px;
-  margin: 15px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.3);
-  max-width: 300px;
-  text-align: center;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  height: 400px; /* fixe la hauteur */
+  overflow: hidden;
 }
 
 .objet img {
   width: 100%;
-  border-radius: 6px;
-  margin-bottom: 10px;
+  height: 180px;
   object-fit: cover;
-  height: 200px;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
-.objets-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+
+.objet h3 {
+  margin: 0;
+  font-size: 1.1rem;
 }
+
+.objet p {
+  flex-grow: 1;
+  font-size: 0.95rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 
 
 /* ============================= */
