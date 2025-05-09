@@ -193,6 +193,8 @@ h1, h2, h3, .logo-hero {
   text-align: center;
   margin-bottom: 20px;
 }
+
+
 /* ============================= */
 /*  SECTIONS DE PREVIEW        */
 /* ============================= */
@@ -290,20 +292,36 @@ h1, h2, h3, .logo-hero {
 /* ============================= */
 /*  PAGE CALENDRIER         */
 /* ============================= */
-#calendar {
-  margin-top: 100px; 
-  min-height: 500px;
-  border: 2px solid #ff6600;
-  border-radius: 20px;
-  padding: 10px;
-  position: relative;
-  z-index: 1;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 .main-content {
   margin-top: 100px; /* Ajustez cette valeur selon la hauteur de votre header */
 }
+.filtre-equipe {
+  margin: 20px;
+}
+.filtre-equipe label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+#team-filter {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #ff6600;
+}
+.match-list {
+  list-style: none;
+  padding: 0 20px;
+}
+.match-list li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #1e1e1e;
+  color: #fff;
+  border-left: 5px solid #FFA500;
+  border-radius: 5px;
+}
+
 .section h2 {
   text-align: center;
   font-size: 2.5rem;
@@ -869,6 +887,11 @@ h1, h2, h3, .logo-hero {
   .galerie-photos {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
+ 
+  /* Masquer l'image de fond */
+  .hero-bg {
+      display: none;
+    }
 }
 /* Responsive pour Mobiles (max-width: 600px) */
 @media (max-width: 600px) {

@@ -21,15 +21,6 @@
   
   <style>
     /* Styles spécifiques au Calendrier */
-    #calendar {
-      background: #1a1a1a;
-      color: #eee;
-      border: 2px solid #ff6600;
-      border-radius: 20px;
-      padding: 10px;
-      min-height: 500px;
-      margin: 0 auto;
-    }
     .fc-event {
       background-color: #00e5ff !important; /* Fond bleu fluo */
       color: #fff !important;
@@ -112,7 +103,13 @@
   <main class="main-content" style="margin-top:100px;">
     <section class="section calendrier-section">
       <h2>Calendrier des Matchs</h2>
-      <div id="calendar"></div>
+      <div class="filtre-equipe">
+        <label for="team-filter">Filtrer par équipe :</label>
+        <select id="team-filter">
+          <option value="all">Toutes les équipes</option>
+        </select>
+      </div>
+      <ul id="match-list" class="match-list"></ul>
     </section>
   </main>
 
@@ -146,78 +143,9 @@
     </div>
   </footer>  
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var calendarEl = document.getElementById('calendar');
-      if (!calendarEl) {
-        console.error("L'élément #calendar est introuvable.");
-        return;
-      }
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',
-        locale: 'fr',
-        headerToolbar: {
-          left: 'prev,next today',
-          center: 'title',
-          right: 'dayGridMonth,timeGridWeek,timeGridDay'
-        }
-        // Vous pouvez ajouter d'autres options ici
-      });
-      
-      // Charger le fichier calendrier.json qui contient les références aux événements
-      fetch('/calendrier.json')
-        .then(response => {
-          if (!response.ok) throw new Error('Erreur réseau lors du chargement du fichier calendrier.json');
-          return response.json();
-        })
-        .then(manifest => {
-          console.log("Manifest calendrier chargé:", manifest);
-          // Pour chaque événement listé dans le manifeste, charger son fichier JSON
-          let eventPromises = manifest.map(entry => {
-            return fetch(entry.file)
-              .then(resp => {
-                if (!resp.ok) throw new Error('Erreur réseau lors du chargement de l\'événement ' + entry.file);
-                return resp.json();
-              })
-              .then(eventData => {
-                // Transformer les données pour FullCalendar.
-                // On suppose ici que eventData contient au moins { title, date, match_details }
-                return {
-                  title: eventData.title,
-                  // Utilisez eventData.date ou eventData.start, ici on va vérifier avec la transformation
-                  date: eventData.date, 
-                  description: eventData.match_details || ''
-                };
-              });
-          });
-    
-          // Utiliser Promise.all pour attendre que tous les événements soient chargés
-          Promise.all(eventPromises)
-            .then(events => {
-              // Transformation pour s'assurer que l'événement a une propriété "start"
-              const formattedEvents = events.map(ev => {
-                // Si "start" n'existe pas mais "date" est fourni, on le convertit
-                if (!ev.start && ev.date) {
-                  ev.start = new Date(ev.date).toISOString();
-                }
-                return ev;
-              });
-              console.log("Événements transformés:", formattedEvents);
-              calendar.addEventSource(formattedEvents);
-              calendar.render();
-            })
-            .catch(err => {
-              console.error('Erreur lors du traitement des événements:', err);
-            });
-        })
-        .catch(error => {
-          console.error('Erreur lors du chargement du manifeste calendrier:', error);
-        });
-    });
-    </script>
-    
-    
-  
+  <!-- JS -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/calendrier.js"></script>
+
 </body>
 </html>
