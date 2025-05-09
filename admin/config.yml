@@ -64,3 +64,13 @@ collections:
       - { name: "title", label: "Titre", widget: "string" }
       - { name: "date", label: "Date", widget: "datetime" }
   
+  - name: "objets_trouves"
+    label: "Objets trouvés"
+    folder: "content/objets-trouves"
+    create: true
+    format: json
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: "title", label: "Titre", widget: "string" }
+      - { name: "description", label: "Description", widget: "text" }
+      - { name: "image", label: "Photo", widget: "image" }
