@@ -103,3 +103,105 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+//--------------------------------------------------------//
+//--------------------------------------------------------//
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Site AS La Selle La Forge prêt !");
+
+  // --- Filtres Convocations ---
+  const equipeSelect = document.getElementById("equipe-select");
+  if (equipeSelect) {
+    equipeSelect.addEventListener("change", (e) => {
+      const selectedEquipe = e.target.value;
+      filterConvocations(selectedEquipe);
+    });
+  }
+
+  function filterConvocations(equipe) {
+    const container = document.getElementById("convocations-container");
+    if (!container) return;
+
+    const convocations = container.querySelectorAll(".convocation-item");
+    convocations.forEach((item) => {
+      if (equipe === "all" || item.textContent.includes(equipe)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+
+  // --- Calendrier FullCalendar ---
+  const calendarEl = document.getElementById('calendar');
+  if (calendarEl) {
+    const calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth',
+      locale: 'fr',
+      headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+      }
+    });
+    calendar.render();
+  }
+
+  // --- LightGallery ---
+  const albumPhotos = document.querySelectorAll('.album-photos');
+  albumPhotos.forEach(container => {
+    lightGallery(container, {
+      plugins: [lgThumbnail],
+      licenseKey: 'your_license_key',
+      speed: 500,
+      mode: 'lg-fade'
+    });
+  });
+
+  // --- Menu burger + sous-menu "Le Club" ---
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.querySelector('.burger-menu');
+  const menu = document.querySelector('.menu');
+  const submenu = document.querySelector('.submenu');
+  const submenuToggle = document.querySelector('.submenu-toggle');
+
+  // Toggle menu principal
+  if (burger && menu) {
+    burger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      menu.classList.toggle('active');
+    });
+
+    // Clic en dehors ferme tout
+    document.addEventListener('click', (e) => {
+      if (!menu.contains(e.target) && !burger.contains(e.target)) {
+        menu.classList.remove('active');
+        if (submenu) submenu.classList.remove('open');
+      }
+    });
+
+    // Clic sur lien normal ferme tout
+    menu.querySelectorAll('a:not(.submenu-toggle)').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('active');
+        if (submenu) submenu.classList.remove('open');
+      });
+    });
+  }
+
+  // Toggle sous-menu "Le Club"
+  if (submenu && submenuToggle) {
+    submenuToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      submenu.classList.toggle('open');
+    });
+  }
+});
+
+  // --- Footer année dynamique ---
+  const yearSpan = document.getElementById('year');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+});

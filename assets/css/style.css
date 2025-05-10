@@ -64,6 +64,68 @@ h1, h2, h3, .logo-hero {
 .menu ul li a:hover {
   color: #ff6600;
 }
+/* Sous-menu dans Le Club */
+.submenu {
+  position: relative;
+}
+
+.submenu .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #111;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  min-width: 160px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.submenu:hover .dropdown {
+  display: block;
+}
+
+.submenu .dropdown li {
+  padding: 0;
+}
+
+.submenu .dropdown a {
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.submenu .dropdown a:hover {
+  background-color: #222;
+}
+.submenu .dropdown {
+  display: none;
+}
+
+.submenu .dropdown.open {
+  display: block;
+}
+/* Affichage du menu principal */
+.menu ul {
+  display: none;
+  flex-direction: column;
+}
+
+.menu.active ul {
+  display: flex;
+}
+
+/* Sous-menu Club */
+.submenu .dropdown {
+  display: none;
+}
+
+.submenu.open .dropdown {
+  display: block;
+}
+
+
+
 /* Bouton convocation */
 .btn-convocation {
   background: #ff6600;
