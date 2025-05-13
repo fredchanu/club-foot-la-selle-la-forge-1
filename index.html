@@ -102,7 +102,7 @@
   <!-- SECTION PREVIEW ACTUALITÉS -->
   <section class="preview-section">
     <div class="preview-card">
-      <h2>Actualités</h2>
+      <h2>A la Une</h2>
       <div id="latest-news-container">
         <!-- Chargement dynamique des actualités -->
      
@@ -194,10 +194,11 @@
 
       const container = document.getElementById("latest-news-container");
       container.innerHTML = `
-        <img src="${aLaUne.image}" alt="${aLaUne.title}" style="max-width:100%; border-radius:10px; margin-bottom:1rem;">
+        <img src="${aLaUne.image}" alt="${aLaUne.title}" class="preview-image">
         <h3 style="color:#ff6600; font-size:1.5rem;">${aLaUne.title}</h3>
         <p>${aLaUne.body.substring(0, 120)}...</p>
       `;
+
     })
     .catch(err => {
       console.error("Erreur lors du chargement des actualités :", err);
