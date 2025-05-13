@@ -193,6 +193,49 @@ h1, h2, h3, .logo-hero {
   text-align: center;
   margin-bottom: 20px;
 }
+/* ============================= */
+/*  SECTIONS BOUTON CTA        */
+/* ============================= */
+.cta-section-dark {
+  background: #1a1a1a;
+  border: 2px solid #00e5ff;
+  padding: 2rem 1rem;
+  margin: 3rem auto;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+}
+
+.cta-section-dark h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  color: #00e5ff;
+  margin-bottom: 1rem;
+}
+
+.cta-section-dark p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button-dark {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #ff6600;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button-dark:hover {
+  background-color: #ff8c00;
+  transform: scale(1.05);
+}
 
 
 /* ============================= */
