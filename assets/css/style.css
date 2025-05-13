@@ -687,6 +687,23 @@ h1, h2, h3, .logo-hero {
 .contact-item p {
   margin: 0.5rem 0;
 }
+.contacts-section input[type="text"],
+.contacts-section input[type="email"],
+.contacts-section textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 2px solid #00e5ff;
+  background-color: #fff;
+  color: #000;
+  margin-top: 6px;
+}
+
+.contacts-section textarea {
+  resize: vertical;
+}
+
 /* Carte */
 .contact-map {
   margin-top: 2rem;
