@@ -275,6 +275,26 @@ h1, h2, h3, .logo-hero {
 .preview-card .btn:hover {
   background: #ff8c00;
 }
+.objets-trouves-section {
+  background: #1a1a1a;
+  border-top: 2px solid #ff6600;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.objets-trouves-section h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  color: #00e5ff;
+  margin-bottom: 1rem;
+}
+
+.objets-trouves-section p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
 /* ============================= */
 /*  SECTION FOOTER             */
 /* ============================= */
