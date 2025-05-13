@@ -852,6 +852,11 @@ h1, h2, h3, .logo-hero {
   background-color: #1a1a1a; 
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgMTIgOCI+PHBvbHlnb24gcG9pbnRzPSIwLDAgNiw4IDEyLDAiIGZpbGw9IiNmZjY2MDAiIC8+PC9zdmc+');
 }
+.blurred *:not(#lock-screen):not(#lock-screen *) {
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+}
 
 
 

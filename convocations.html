@@ -14,7 +14,14 @@
   <link rel="manifest" href="/site.webmanifest">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="blurred">
+<div id="lock-screen" style="position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 9999; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+  <h2 style="color: #00e5ff; font-family: 'Bebas Neue', sans-serif; font-size: 2rem;">Accès réservé</h2>
+  <input type="password" id="password-input" placeholder="Mot de passe" style="padding: 10px; font-size: 1.2rem; margin: 1rem; border-radius: 5px; border: none;" />
+  <button onclick="unlock()" style="padding: 10px 20px; font-size: 1rem; background: #ff6600; color: white; border: none; border-radius: 5px; cursor: pointer;">Valider</button>
+  <p id="error-msg" style="color: red; display: none; margin-top: 1rem;">Mot de passe incorrect</p>
+</div>
+
   <header class="header-fix">
     <div class="header-container">
       <button class="burger-menu" aria-label="Ouvrir le menu">
@@ -153,5 +160,19 @@
   </footer>  
   
   <script src="assets/js/main.js"></script>
+  <script>
+  const correctPassword = "laselle2025"; // 🔐 Mot de passe à modifier ici
+
+  function unlock() {
+    const input = document.getElementById("password-input").value;
+    if (input === correctPassword) {
+      document.getElementById("lock-screen").style.display = "none";
+      document.body.classList.remove("blurred");
+    } else {
+      document.getElementById("error-msg").style.display = "block";
+    }
+  }
+</script>
+
 </body>
 </html>
