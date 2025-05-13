@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   const matchList = document.getElementById('match-list');
   const teamFilter = document.getElementById('team-filter');
@@ -19,8 +18,23 @@ document.addEventListener('DOMContentLoaded', () => {
           weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
         });
 
-        const teamMatch = event.title.match(/(U\d+|Seniors)/i);
-        const team = teamMatch ? teamMatch[1].toLowerCase() : 'autres';
+        // Détection améliorée
+        let team = 'autres';
+        const title = event.title.toLowerCase();
+
+        if (title.includes('féminines')) {
+          team = 'feminines';
+        } else if (title.includes('coupe')) {
+          team = 'coupe';
+        } else if (title.includes('senior') || title.includes('séniors')) {
+          team = 'seniors';
+        } else {
+          const uMatch = title.match(/u\d{1,2}/);
+          if (uMatch) {
+            team = uMatch[0]; // ex: "u15"
+          }
+        }
+
         equipesSet.add(team);
 
         const li = document.createElement('li');
@@ -29,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         matchList.appendChild(li);
       });
 
+      // Ajout des options triées
       [...equipesSet].sort().forEach(team => {
         const opt = document.createElement('option');
         opt.value = team;
