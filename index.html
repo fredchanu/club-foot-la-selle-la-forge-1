@@ -184,14 +184,17 @@
   <script>
   fetch("articles.json")
     .then(res => res.json())
+    .then(files => {
+      const fetches = files.map(item => fetch(item.file).then(res => res.json()));
+      return Promise.all(fetches);
+    })
     .then(data => {
-      // Recherche de l'article marqué à la une
       const aLaUne = data.find(article => article.highlight === true);
-
       if (!aLaUne) return;
 
       const container = document.getElementById("latest-news-container");
       container.innerHTML = `
+        <img src="${aLaUne.image}" alt="${aLaUne.title}" style="max-width:100%; border-radius:10px; margin-bottom:1rem;">
         <h3 style="color:#ff6600; font-size:1.5rem;">${aLaUne.title}</h3>
         <p>${aLaUne.body.substring(0, 120)}...</p>
       `;
