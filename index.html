@@ -104,8 +104,8 @@
     <div class="preview-card">
       <h2>Actualités</h2>
       <div id="latest-news-container">
-        <!-- Ici, vous pouvez intégrer un code pour charger le dernier article, par exemple via fetch -->
-        <!-- Pour simplifier, on affiche un extrait statique -->
+        <!-- Chargement dynamique des actualités -->
+     
         <p>Découvrez nos dernières nouvelles et événements marquants du club.</p>
       </div>
       <a href="actualites.html" class="btn">Voir toutes les Actualités</a>
@@ -180,5 +180,26 @@
   </footer>  
 
   <script src="assets/js/main.js"></script>
+
+  <script>
+  fetch("articles.json")
+    .then(res => res.json())
+    .then(data => {
+      // Recherche de l'article marqué à la une
+      const aLaUne = data.find(article => article.highlight === true);
+
+      if (!aLaUne) return;
+
+      const container = document.getElementById("latest-news-container");
+      container.innerHTML = `
+        <h3 style="color:#ff6600; font-size:1.5rem;">${aLaUne.title}</h3>
+        <p>${aLaUne.body.substring(0, 120)}...</p>
+      `;
+    })
+    .catch(err => {
+      console.error("Erreur lors du chargement des actualités :", err);
+    });
+</script>
+
 </body>
 </html>

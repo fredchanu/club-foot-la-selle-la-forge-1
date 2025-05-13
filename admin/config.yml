@@ -16,6 +16,7 @@ collections:
       - { name: "title", label: "Titre", widget: "string" }
       - { name: "body", label: "Contenu", widget: "markdown" }
       - { name: "image", label: "Image", widget: "image" }
+      - { label: "À la une", name: "highlight", widget: "boolean", default: false }
 
   - name: "convocations"
     label: "Convocations"
