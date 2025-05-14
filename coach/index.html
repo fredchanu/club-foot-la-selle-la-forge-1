@@ -28,5 +28,21 @@
     <div id="nc-root"></div>
   </div>
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const observer = new MutationObserver(() => {
+      document.querySelectorAll('input[id$="-nom"]').forEach(input => {
+        input.setAttribute('readonly', 'true');
+        input.style.backgroundColor = '#eee';
+        input.style.color = '#666';
+        input.style.cursor = 'not-allowed';
+      });
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+  });
+</script>
+
 </body>
 </html>

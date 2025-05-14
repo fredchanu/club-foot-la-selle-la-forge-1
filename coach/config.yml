@@ -23,5 +23,5 @@ collections:
         widget: "list"
         summary: "{{nom}} - {{convoque}}"
         fields:
-          - { name: "nom", label: "Nom", widget: "string", required: false }
+          - { name: "nom", label: "Nom", widget: "string", required: false, hint: "Champ non modifiable" }
           - { name: "convoque", label: "Convoqué ?", widget: "select", options: ["Oui", "Non"], default: "Non" }
