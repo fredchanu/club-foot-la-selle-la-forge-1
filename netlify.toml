@@ -1,0 +1,9 @@
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    Basic-Auth = "admin:adminpass"
+
+[[headers]]
+  for = "/coach/*"
+  [headers.values]
+    Basic-Auth = "coach:coachpass"
