@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: main
+locale: fr
+
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+collections:
+  - name: "convocations"
+    label: "Convocations"
+    folder: "content/convocations"
+    create: false
+    format: json
+    slug: "convocation-{{year}}-{{month}}-{{day}}"
+    fields:
+      - { name: "equipe", label: "Équipe", widget: "string", required: false }
+      - { name: "match_title", label: "Match", widget: "string", required: false }
+      - { name: "match_date", label: "Date", widget: "string", required: false }
+      - { name: "match_time", label: "Heure", widget: "string", required: false }
+      - label: "Joueurs"
+        name: "joueurs"
+        widget: "list"
+        summary: "{{nom}} - {{convoque}}"
+        fields:
+          - { name: "nom", label: "Nom", widget: "string", required: false }
+          - { name: "convoque", label: "Convoqué ?", widget: "select", options: ["Oui", "Non"], default: "Non" }
