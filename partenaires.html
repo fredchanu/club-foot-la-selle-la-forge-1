@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partenaires - AS La Selle La Forge</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header class="header-fix">
+    <div class="header-container">
+      <!-- Bouton burger affiché sur mobile, positionné à gauche -->
+      <button class="burger-menu" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="calendrier.html">Calendrier</a></li>  
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="club.html">Club</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="partenaires.html">Partenaires</a></li>
+          <li><a class="btn-convocation" href="convocations.html">Convocation</a></li>
+        </ul>
+      </nav>
+      <a href="admin/index.html" class="login-link" target="_blank">
+        <div class="login-icon">
+          <i class="fa fa-user"></i>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="partenaires-section">
+      <h2>Nos Partenaires</h2>
+      <div id="partenaires-container">
+        <p>Chargement des partenaires...</p>
+      </div>
+    </section>
+  </main>
+
+ <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="calendrier.html">Calendrier</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="club.html">Club</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="partenaires.html">Partenaires</a></li>
+          <li><a href="objets.html">Objets trouvés</a></li>
+          <li><a href="convocations.html">Convocation</a></li>
+        </ul>
+      </div>
+      <div class="footer-legal">
+        <ul>
+          <li><a href="/pages/mentions-legales.html" target="_blank">Mentions légales</a></li>
+          <li><a href="/pages/politique-confidentialite.html" target="_blank">Politique de confidentialité</a></li>
+          <li><a href="/pages/conditions-utilisation.html" target="_blank">Conditions d'utilisation</a></li>
+        </ul>
+      </div>
+      <div class="footer-promo">
+        <p>Site web créé par <strong><a href="https://novatech-studio.com" target="_blank"> Novatech Studio </a></strong> pour AS La Selle La Forge.</p>
+      </div>
+      <div class="footer-copy">
+        <p>© <span id="year"></span> AS La Selle La Forge. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>  
+
+  <script>
+    fetch('partenaires.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById("partenaires-container");
+        container.innerHTML = "";
+        data.forEach(partenaire => {
+          const block = document.createElement("div");
+          block.className = "partenaire";
+          block.innerHTML = `
+            <img src="\${partenaire.logo}" alt="\${partenaire.nom}" style="max-width: 200px;">
+            <h3>\${partenaire.nom}</h3>
+            <p>\${partenaire.description}</p>
+          `;
+          container.appendChild(block);
+        });
+      })
+      .catch(err => {
+        document.getElementById("partenaires-container").innerHTML = "<p>Erreur lors du chargement des partenaires.</p>";
+        console.error(err);
+      });
+  </script>
+</body>
+</html>

@@ -76,3 +76,15 @@ collections:
       - { name: "title", label: "Titre", widget: "string" }
       - { name: "description", label: "Description", widget: "text" }
       - { name: "image", label: "Photo", widget: "image" }
+
+  - name: "partenaires"
+    label: "Partenaires"
+    folder: "content/partenaires"
+    create: true
+    format: json
+    slug: "{{slug}}"
+    fields:
+      - { name: "nom", label: "Nom du partenaire", widget: "string" }
+      - { name: "logo", label: "Logo", widget: "image" }
+      - { name: "description", label: "Description", widget: "text" }
+  
