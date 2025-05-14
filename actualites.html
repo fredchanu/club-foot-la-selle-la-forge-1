@@ -94,9 +94,7 @@
         return response.json();
       })
       .then(articles => {
-        articles.reverse();
-        console.log("Articles dans l'ordre inversé :", articles);
-        console.log("Manifest actualités chargé:", articles);
+        articles.sort((a, b) => new Date(b.date) - new Date(a.date));
         articles.forEach(article => {
           const articleElem = document.createElement('article');
           articleElem.className = 'actu-item';
