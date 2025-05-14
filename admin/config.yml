@@ -82,7 +82,7 @@ collections:
     folder: "content/partenaires"
     create: true
     format: json
-    slug: "partenaire-{{year}}{{month}}{{day}}-{{fields.nom | slug}}"
+    slug: "{{fields.nom | slug}}"
     fields:
       - { name: "nom", label: "Nom du partenaire", widget: "string" }
       - { name: "logo", label: "Logo", widget: "image" }
