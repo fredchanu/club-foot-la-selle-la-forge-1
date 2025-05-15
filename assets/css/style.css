@@ -802,7 +802,7 @@ h1, h2, h3, .logo-hero {
   box-shadow: 0 0 10px rgba(0,229,255,0.5);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 1rem;
   overflow: auto;
@@ -819,6 +819,7 @@ h1, h2, h3, .logo-hero {
   color: #ff6600;
   font-size: 1.5rem;
   text-align: center;
+  margin-top: auto;
 }
 
 .card-back {
