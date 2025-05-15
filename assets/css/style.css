@@ -766,7 +766,7 @@ h1, h2, h3, .logo-hero {
 
 .partenaires-section h2 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: #00e5ff;
   margin-bottom: 2rem;
 }
@@ -780,8 +780,8 @@ h1, h2, h3, .logo-hero {
 }
 
 .partenaire {
-  width: 200px;
-  height: 250px;
+  width: 250px;
+  height: 300px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.6s;
@@ -799,7 +799,7 @@ h1, h2, h3, .logo-hero {
   background-color: #1c1c1c;
   border: 1px solid #00e5ff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,229,255,0.2);
+  box-shadow: 0 0 10px rgba(0,229,255,0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -809,10 +809,10 @@ h1, h2, h3, .logo-hero {
 }
 
 .card-front img {
-  max-width: 80%;
-  max-height: 80px;
+  max-width: 90%;
+  max-height: 100px;
   object-fit: contain;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .card-front h3 {
