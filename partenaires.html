@@ -78,27 +78,32 @@
     </div>
   </footer>  
 
-  <script>
-    fetch('partenaires.json')
-      .then(res => res.json())
-      .then(data => {
-        const container = document.getElementById("partenaires-container");
-        container.innerHTML = "";
-        data.forEach(partenaire => {
-          const block = document.createElement("div");
-          block.className = "partenaire";
-          block.innerHTML = `
-            <img src="${partenaire.logo}" alt="${partenaire.nom}" style="max-width: 200px;">
+<script>
+  fetch('partenaires.json')
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById("partenaires-container");
+      container.innerHTML = "";
+      data.forEach(partenaire => {
+        const cardWrapper = document.createElement("div");
+        cardWrapper.className = "partenaire";
+        cardWrapper.innerHTML = `
+          <div class="card-face card-front">
+            <img src="${partenaire.logo}" alt="${partenaire.nom}">
             <h3>${partenaire.nom}</h3>
+          </div>
+          <div class="card-face card-back">
             <p>${partenaire.description}</p>
-          `;
-          container.appendChild(block);
-        });
-      })
-      .catch(err => {
-        document.getElementById("partenaires-container").innerHTML = "<p>Erreur lors du chargement des partenaires.</p>";
-        console.error(err);
+          </div>
+        `;
+        container.appendChild(cardWrapper);
       });
-  </script>
+    })
+    .catch(err => {
+      document.getElementById("partenaires-container").innerHTML = "<p>Erreur lors du chargement des partenaires.</p>";
+      console.error(err);
+    });
+</script>
+
 </body>
 </html>
