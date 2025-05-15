@@ -809,10 +809,10 @@ h1, h2, h3, .logo-hero {
 }
 
 .card-front img {
-  max-width: 90%;
-  max-height: 100px;
+  max-width: 95%;
+  max-height: 150px;
   object-fit: contain;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .card-front h3 {
