@@ -757,12 +757,18 @@ h1, h2, h3, .logo-hero {
 /* ============================= */
 /*  PAGE PARTENAIRES            */
 /* ============================= */
+#partenaires-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* espace entre les cartes */
+  padding: 2rem 1rem;
+}
 
 .partenaires-section {
   background: #1a1a1a;
   padding: 2rem;
   margin: 2rem auto;
-  max-width: 1200px;
   text-align: center;
 }
 .partenaires-section h2 {
@@ -774,6 +780,7 @@ h1, h2, h3, .logo-hero {
   width: 220px;
   height: 280px;
   perspective: 1000px;
+  margin-bottom: 1rem;
 }
 .card-inner {
   position: relative;
