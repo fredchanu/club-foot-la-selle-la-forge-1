@@ -762,7 +762,11 @@ h1, h2, h3, .logo-hero {
   height: 280px;
   perspective: 1000px;
 }
-
+.partenaires-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #00e5ff;
+}
 .card-inner {
   position: relative;
   width: 100%;
