@@ -40,6 +40,9 @@
   <main class="main-content">
     <section class="partenaires-section">
       <h2>Nos Partenaires</h2>
+
+      <p class="mobile-info">📱 Touchez une carte pour plus d’infos</p>
+      
       <div id="partenaires-container">
         <p>Chargement des partenaires...</p>
       </div>
@@ -78,6 +81,9 @@
     </div>
   </footer>  
 
+<script src="assets/js/main.js"></script>
+<script src="assets/js/mobile-card.js"></script>
+
 <script>
   fetch('partenaires.json')
     .then(res => res.json())
@@ -88,12 +94,15 @@
         const cardWrapper = document.createElement("div");
         cardWrapper.className = "partenaire";
         cardWrapper.innerHTML = `
-          <div class="card-face card-front">
-            <img src="${partenaire.logo}" alt="${partenaire.nom}">
-            <h3>${partenaire.nom}</h3>
-          </div>
-          <div class="card-face card-back">
-            <p>${partenaire.description}</p>
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="${partenaire.logo}" alt="${partenaire.nom}" />
+              <h3>${partenaire.nom}</h3>
+            </div>
+            <div class="card-back">
+              <p>${partenaire.description}</p>
+              <a href="${partenaire.lien}" target="_blank">Voir plus</a>
+            </div>
           </div>
         `;
         container.appendChild(cardWrapper);

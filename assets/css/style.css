@@ -829,6 +829,20 @@ h1, h2, h3, .logo-hero {
   font-size: 0.85rem;
   text-align: center;
 }
+.mobile-info {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  display: none;
+}
+
+@media (hover: none) {
+  .mobile-info {
+    display: block;
+  }
+}
 
 
 
