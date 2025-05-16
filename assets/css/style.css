@@ -176,8 +176,7 @@ h1, h2, h3, .logo-hero {
   padding: 10px;
 }
 .social-icons a {
-  color: #eee;           /* Couleur claire pour contraster avec le fond sombre */
-  font-size: 2rem;
+  color: #eee;      
   transition: transform 0.3s ease, color 0.3s ease;
   text-decoration: none;
 }
@@ -186,12 +185,12 @@ h1, h2, h3, .logo-hero {
   color: #ff6600;        /* Accent orange au survol */
 }
 .follow-text {
-  color: #00e5ff;        /* Bleu fluo */
+  color: #00e5ff;        
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 10px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 /* ============================= */
 /*  SECTIONS BOUTON CTA        */
