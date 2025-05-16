@@ -757,15 +757,23 @@ h1, h2, h3, .logo-hero {
 /* ============================= */
 /*  PAGE PARTENAIRES            */
 /* ============================= */
-.card {
-  width: 220px;
-  height: 280px;
-  perspective: 1000px;
+
+.partenaires-section {
+  background: #1a1a1a;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  text-align: center;
 }
 .partenaires-section h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: #00e5ff;
+}
+.card {
+  width: 220px;
+  height: 280px;
+  perspective: 1000px;
 }
 .card-inner {
   position: relative;
