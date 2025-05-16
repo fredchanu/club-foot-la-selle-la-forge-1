@@ -172,9 +172,14 @@ h1, h2, h3, .logo-hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   padding: 10px;
+  margin-bottom: 40px;
 }
+.social-icons i {
+  font-size: 2.5rem; 
+}
+
 .social-icons a {
   color: #eee;      
   transition: transform 0.3s ease, color 0.3s ease;
@@ -190,7 +195,6 @@ h1, h2, h3, .logo-hero {
   font-weight: bold;
   margin-top: 10px;
   text-align: center;
-  margin-bottom: 40px;
 }
 /* ============================= */
 /*  SECTIONS BOUTON CTA        */
