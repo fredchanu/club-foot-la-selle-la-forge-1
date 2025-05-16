@@ -42,7 +42,7 @@
       <h2>Nos Partenaires</h2>
 
       <p class="mobile-info">📱 Touchez une carte pour plus d’infos</p>
-      
+
       <div id="partenaires-container">
         <p>Chargement des partenaires...</p>
       </div>
@@ -93,17 +93,19 @@
       data.forEach(partenaire => {
         const cardWrapper = document.createElement("div");
         cardWrapper.className = "partenaire";
-        cardWrapper.innerHTML = `
+        cardWrapper.innerHTML =`
+        <div class="card">  
           <div class="card-inner">
-            <div class="card-front">
-              <img src="${partenaire.logo}" alt="${partenaire.nom}" />
-              <h3>${partenaire.nom}</h3>
-            </div>
-            <div class="card-back">
-              <p>${partenaire.description}</p>
-              <a href="${partenaire.lien}" target="_blank">Voir plus</a>
-            </div>
+              <div class="card-front">
+                <img src="${partenaire.logo}" alt="${partenaire.nom}" />
+                <h3>${partenaire.nom}</h3>
+              </div>
+              <div class="card-back">
+                <p>${partenaire.description}</p>
+                <a href="${partenaire.lien}" target="_blank">Voir plus</a>
+              </div>
           </div>
+        </div>
         `;
         container.appendChild(cardWrapper);
       });
