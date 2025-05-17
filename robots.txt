@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aslasellelaforge.com/sitemap.xml
+Sitemap: https://aslasellelaforge.com/sitemap-v2.xml
