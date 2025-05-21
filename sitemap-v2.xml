@@ -6,11 +6,6 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://aslasellelaforge.com/convocations</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://aslasellelaforge.com/calendrier</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
