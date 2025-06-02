@@ -1,0 +1,12 @@
+{
+  "joueurs": [
+    {
+      "convoque": "Oui",
+      "nom": "JOHN X "
+    }
+  ],
+  "equipe": "U7",
+  "match_title": "LA SELLE VS FLERS",
+  "match_date": "12/06/2025",
+  "match_time": "14H"
+}
