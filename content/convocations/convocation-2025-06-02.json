@@ -3,6 +3,14 @@
     {
       "convoque": "Oui",
       "nom": "JOHN X "
+    },
+    {
+      "convoque": "Non",
+      "nom": "joueur "
+    },
+    {
+      "convoque": "Non",
+      "nom": "joueurq"
     }
   ],
   "equipe": "U7",
