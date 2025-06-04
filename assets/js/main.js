@@ -30,22 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-//--------------------------------------------------------//
-//--------------------------------------------------------//
-  document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: 'dayGridMonth',
-      locale: 'fr', // pour afficher en français si besoin
-      headerToolbar: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay'
-      }
-
-    });
-    calendar.render();
-  });
 
 //--------------------------------------------------------//
 //--------------------------------------------------------//

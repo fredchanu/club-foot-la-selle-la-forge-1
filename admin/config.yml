@@ -30,6 +30,7 @@ collections:
       - { name: "match_title", label: "Titre du match", widget: "string" }
       - { name: "match_date", label: "Date du match", widget: "string", hint: "Ex : 12 septembre 2025" }
       - { name: "match_time", label: "Heure du match", widget: "string", hint: "Ex : 20h00" }
+      - { name: "commentaire", label: "Commentaire (optionnel)", widget: "text", required: false, hint: "Affiché sous l'heure du match (ex : soyez là 15 min avant le match, apporter gourde...)" }
       - label: "Liste des joueurs"
         name: "joueurs"
         widget: "list"
