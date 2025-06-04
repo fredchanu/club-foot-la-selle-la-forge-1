@@ -1,0 +1,16 @@
+{
+  "joueurs": [
+    {
+      "convoque": "Oui",
+      "nom": "jpueur 1 "
+    },
+    {
+      "convoque": "Oui",
+      "nom": "joueurr2"
+    }
+  ],
+  "equipe": "U9",
+  "match_title": "aaaa",
+  "match_date": "12/05/2025",
+  "match_time": "14h"
+}
