@@ -1013,6 +1013,39 @@ h1, h2, h3, .logo-hero {
   font-size: 1rem;
   color: #ccc;
 }
+.arbitres-section {
+  background: #1a1a1a;
+  border: 2px solid #00e5ff;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.2);
+}
+
+#arbitres-container h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  color: #00e5ff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+#arbitres-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#arbitres-container li {
+  background: #222;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #eee;
+  font-size: 0.95rem;
+  border-left: 4px solid #ff6600;
+}
 
 /* ============================= */
 /* Responsive Media Queries      */
