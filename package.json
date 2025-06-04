@@ -9,7 +9,8 @@
   "build:manifest:cal": "node generate-calendrier-manifest.js",
   "build:manifest:objets": "node generate-objets-manifest.js",
   "build:manifest:partenaires": "node generate-partenaires-manifest.js",
-  "build": "npm run build:manifest && npm run build:manifest:conv && npm run build:manifest:gal && npm run build:manifest:cal && npm run build:manifest:objets && npm run build:manifest:partenaires && echo 'No build step'"
+  "build:manifest:arbitres": "node generate-arbitres-manifest.js",
+  "build": "npm run build:manifest && npm run build:manifest:conv && npm run build:manifest:gal && npm run build:manifest:cal && npm run build:manifest:objets && npm run build:manifest:partenaires && npm run build:manifest:arbitres && echo 'No build step'"
 }
 
 }

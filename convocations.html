@@ -44,84 +44,121 @@
   </header>
 
   <main class="main-content">
-    <section class="convocation-section">
-      <h2>Convocations</h2>
-      <!-- Menu déroulant pour sélectionner une équipe -->
-      <select id="teamSelect"  class="convocation-select">
-        <option value="">-- Sélectionnez une équipe --</option>
-      </select>
-      <div id="convocations-container"></div>
-      <script>
-        const manifestUrl = '/convocations.json';
-        const container = document.getElementById('convocations-container');
-        const teamSelect = document.getElementById('teamSelect');
-      
-        fetch(manifestUrl)
-          .then(response => {
-            if (!response.ok) throw new Error('Erreur lors du chargement du manifeste JSON');
-            return response.json();
-          })
-          .then(convocations => {
-            const teams = [...new Set(convocations.map(c => c.equipe))];
-            teams.forEach(team => {
-              const option = document.createElement('option');
-              option.value = team;
-              option.textContent = team;
-              teamSelect.appendChild(option);
-            });
-      
-            function renderTeam(team) {
-              container.innerHTML = '';
-              const teamConvocations = convocations.filter(c => c.equipe === team);
-              if (teamConvocations.length === 0) {
-                container.innerHTML = '<p>Aucune convocation pour cette équipe.</p>';
-                return;
-              }
-              teamConvocations.forEach(conv => {
-                const article = document.createElement('article');
-                article.className = 'convocation-item';
-                article.innerHTML = `
-                  <h3>${conv.match_title || conv.title}</h3>
-                  <p><strong>Date :</strong> ${conv.match_date || conv.date}</p>
-                  <p><strong>Heure :</strong> ${conv.match_time || conv.heure}</p>
-                  ${conv.commentaire ? `<p class="commentaire-match">${conv.commentaire}</p>` : ""}
-                `;
-                // Si des joueurs sont présents
-                if (conv.joueurs && conv.joueurs.length > 0) {
-                  const playersDiv = document.createElement('div');
-                  conv.joueurs.filter(j => j.convoque === "Oui").forEach(player => {
-                    const playerCard = document.createElement('div');
-                    playerCard.className = 'player-card';
-                    playerCard.textContent = player.nom;
-                    playersDiv.appendChild(playerCard);
-                  });
-                  article.appendChild(playersDiv);
-                } else {
-                  article.innerHTML += '<p>Aucun joueur convoqué.</p>';
-                }
-                container.appendChild(article);
-              });
-            }
-      
-            teamSelect.addEventListener('change', function() {
-              const selectedTeam = teamSelect.value;
-              if (selectedTeam) {
-                renderTeam(selectedTeam);
-              } else {
-                container.innerHTML = '<p>Veuillez sélectionner une équipe.</p>';
-              }
-            });
-            if (teams.length > 0) {
-              teamSelect.value = teams[0];
-              renderTeam(teams[0]);
-            }
-          })
-          .catch(error => {
-            console.error('Erreur lors du chargement du manifeste:', error);
-            container.innerHTML = '<p>Erreur lors du chargement des convocations.</p>';
-          });
-      </script>      
+    <section class="arbitres-section">
+      <div id="arbitres-container">
+        <h2>Arbitres</h2>
+        
+      </div>
     </section>
+
+    <script>
+    fetch('/arbitres.json')
+      .then(res => res.json())
+      .then(arbitres => {
+        const container = document.getElementById('arbitres-container');
+        if (!container) return;
+
+        if (arbitres.length === 0) {
+          container.innerHTML = "<p>Aucun arbitre en mission ce week-end.</p>";
+          return;
+        }
+
+        let html = "<h3>Arbitres du club en mission</h3><ul>";
+        arbitres.forEach(a => {
+          html += `<li>
+            <strong>${a.nom}</strong><br>
+            Match : ${a.match}<br>
+            📍 ${a.lieu}<br>
+            🗓️ ${a.date} à ${a.heure}
+          </li>`;
+        });
+        html += "</ul>";
+        container.innerHTML = html;
+      })
+      .catch(err => {
+        console.error("Erreur chargement arbitres.json :", err);
+      });
+    </script>
+
+  <section class="convocation-section">
+    <h2>Convocations</h2>
+    <select id="teamSelect" class="convocation-select">
+      <option value="">-- Sélectionnez une équipe --</option>
+    </select>
+    <div id="convocations-container"></div>
+  </section>
+
+    <script>
+      const manifestUrl = '/convocations.json';
+      const container = document.getElementById('convocations-container');
+      const teamSelect = document.getElementById('teamSelect');
+
+      fetch(manifestUrl)
+        .then(response => {
+          if (!response.ok) throw new Error('Erreur lors du chargement du manifeste JSON');
+          return response.json();
+        })
+        .then(convocations => {
+          const teams = [...new Set(convocations.map(c => c.equipe))];
+          teams.forEach(team => {
+            const option = document.createElement('option');
+            option.value = team;
+            option.textContent = team;
+            teamSelect.appendChild(option);
+          });
+
+          function renderTeam(team) {
+            container.innerHTML = '';
+            const teamConvocations = convocations.filter(c => c.equipe === team);
+            if (teamConvocations.length === 0) {
+              container.innerHTML = '<p>Aucune convocation pour cette équipe.</p>';
+              return;
+            }
+            teamConvocations.forEach(conv => {
+              const article = document.createElement('article');
+              article.className = 'convocation-item';
+              article.innerHTML = `
+                <h3>${conv.match_title || conv.title}</h3>
+                <p><strong>Date :</strong> ${conv.match_date || conv.date}</p>
+                <p><strong>Heure :</strong> ${conv.match_time || conv.heure}</p>
+                ${conv.commentaire ? `<p class="commentaire-match">${conv.commentaire}</p>` : ""}
+              `;
+
+              if (conv.joueurs && conv.joueurs.length > 0) {
+                const playersDiv = document.createElement('div');
+                conv.joueurs.filter(j => j.convoque === "Oui").forEach(player => {
+                  const playerCard = document.createElement('div');
+                  playerCard.className = 'player-card';
+                  playerCard.textContent = player.nom;
+                  playersDiv.appendChild(playerCard);
+                });
+                article.appendChild(playersDiv);
+              } else {
+                article.innerHTML += '<p>Aucun joueur convoqué.</p>';
+              }
+              container.appendChild(article);
+            });
+          }
+
+          teamSelect.addEventListener('change', function () {
+            const selectedTeam = teamSelect.value;
+            if (selectedTeam) {
+              renderTeam(selectedTeam);
+            } else {
+              container.innerHTML = '<p>Veuillez sélectionner une équipe.</p>';
+            }
+          });
+
+          if (teams.length > 0) {
+            teamSelect.value = teams[0];
+            renderTeam(teams[0]);
+          }
+        })
+        .catch(error => {
+          console.error('Erreur lors du chargement du manifeste:', error);
+          container.innerHTML = '<p>Erreur lors du chargement des convocations.</p>';
+        });
+    </script>
   </main>
 
   <footer class="footer">

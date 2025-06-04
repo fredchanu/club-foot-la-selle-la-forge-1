@@ -89,3 +89,15 @@ collections:
       - { name: "logo", label: "Logo", widget: "image" }
       - { name: "description", label: "Description", widget: "text" }
   
+  - name: "arbitres"
+    label: "Arbitres"
+    folder: "content/arbitres"
+    create: true
+    format: json
+    slug: "arbitre-{{year}}-{{month}}-{{day}}"
+    fields:
+      - { name: "nom", label: "Nom de l'arbitre", widget: "string" }
+      - { name: "match", label: "Match arbitré", widget: "string", hint: "Ex : U15 D1 - Flers vs Argentan" }
+      - { name: "lieu", label: "Lieu du match", widget: "string", hint: "Ex : Stade du Hazé" }
+      - { name: "date", label: "Date", widget: "string", hint: "Ex : 08/06/2025" }
+      - { name: "heure", label: "Heure", widget: "string", hint: "Ex : 15:00" }
