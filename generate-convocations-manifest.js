@@ -24,6 +24,7 @@ fs.readdir(convocationsDir, (err, files) => {
           match_time: data.match_time,
           equipe: data.equipe,
           joueurs: data.joueurs,
+          commentaire: data.commentaire || "",
           file: `/content/convocations/${file}`
         });
       } catch (e) {
