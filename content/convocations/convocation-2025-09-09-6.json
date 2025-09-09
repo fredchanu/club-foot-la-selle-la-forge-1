@@ -1,0 +1,72 @@
+{
+  "joueurs": [
+    {
+      "convoque": "Non",
+      "nom": "BENOIST MAEL "
+    },
+    {
+      "convoque": "Non",
+      "nom": "BOUKMOUCH WAIL"
+    },
+    {
+      "convoque": "Non",
+      "nom": "DUBREIL CLOUARD JUDD"
+    },
+    {
+      "convoque": "Non",
+      "nom": "ERNOUX MALO"
+    },
+    {
+      "convoque": "Non",
+      "nom": "GUNGOR ADIL"
+    },
+    {
+      "convoque": "Non",
+      "nom": "HUREL SOAN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "KOSAR ENES"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LALANDE MANSOURI LOUNIS"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LEGUERNEY EVAN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LELARGE NOLAN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "ONAL IBRAHIM"
+    },
+    {
+      "convoque": "Non",
+      "nom": "PELLUET OSCAR"
+    },
+    {
+      "convoque": "Non",
+      "nom": "SEBIRE NATHAN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "SUBASI ILYAS"
+    },
+    {
+      "convoque": "Non",
+      "nom": "TANCRAY MATHIS"
+    },
+    {
+      "convoque": "Non",
+      "nom": "VOISIN RAPHAEL"
+    }
+  ],
+  "equipe": "U13 B",
+  "match_title": "AS",
+  "match_date": "1",
+  "match_time": "1"
+}
