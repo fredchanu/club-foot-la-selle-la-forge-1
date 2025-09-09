@@ -1,16 +1,36 @@
 {
   "joueurs": [
     {
-      "convoque": "Oui",
-      "nom": "jpueur 1 "
+      "convoque": "Non",
+      "nom": "CHANCEREL LYAM"
     },
     {
-      "convoque": "Oui",
-      "nom": "joueurr2"
+      "convoque": "Non",
+      "nom": "CHANCEREL NAE "
+    },
+    {
+      "convoque": "Non",
+      "nom": "PESQUEREL LORYS"
+    },
+    {
+      "convoque": "Non",
+      "nom": "QUEUDEVILLE TIMEO"
+    },
+    {
+      "convoque": "Non",
+      "nom": "SARAC ALPASLAN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "UZUM HALIL"
+    },
+    {
+      "convoque": "Non",
+      "nom": "VILLETTE GABIN"
     }
   ],
   "equipe": "U9",
   "match_title": "aaaa",
   "match_date": "12/05/2025",
-  "match_time": "14h"
+  "match_time": "14h00"
 }
