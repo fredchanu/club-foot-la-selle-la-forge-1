@@ -1,0 +1,88 @@
+{
+  "joueurs": [
+    {
+      "convoque": "Non",
+      "nom": "AUBERT LEO"
+    },
+    {
+      "convoque": "Non",
+      "nom": "AUMONT HELIX NOA"
+    },
+    {
+      "convoque": "Non",
+      "nom": "BARADU HUGO"
+    },
+    {
+      "convoque": "Non",
+      "nom": "BLANCHARD LAMACHE TIM"
+    },
+    {
+      "convoque": "Non",
+      "nom": "CHEDEVILLE GASPARD"
+    },
+    {
+      "convoque": "Non",
+      "nom": "COBAN EMIR"
+    },
+    {
+      "convoque": "Non",
+      "nom": "DROULLON JULES"
+    },
+    {
+      "convoque": "Non",
+      "nom": "HOYEAU NICOLAS"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LE BOISSELLIER TOM"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LE CORRE JULIEN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LESELLIER ORIANO"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LELIEVRE GANDON ALAN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "MACHADO CLEMENT"
+    },
+    {
+      "convoque": "Non",
+      "nom": "MANSOURI KAIS"
+    },
+    {
+      "convoque": "Non",
+      "nom": "MAZIANI ARYLES"
+    },
+    {
+      "convoque": "Non",
+      "nom": "ON ERTURGUL"
+    },
+    {
+      "convoque": "Non",
+      "nom": "OZKOCUM BERAT"
+    },
+    {
+      "convoque": "Non",
+      "nom": "TRUFFERT BUOT YLENZO"
+    },
+    {
+      "convoque": "Non",
+      "nom": "UZUM HAMZA"
+    },
+    {
+      "convoque": "Non",
+      "nom": "YILDIZ HAMZA"
+    }
+  ],
+  "equipe": "U11 A",
+  "match_title": "AS LA SELLE LA FORGE - ",
+  "match_date": "12",
+  "match_time": "10h00"
+}
