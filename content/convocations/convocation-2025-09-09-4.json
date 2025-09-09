@@ -1,0 +1,48 @@
+{
+  "joueurs": [
+    {
+      "convoque": "Non",
+      "nom": "BAZIN PAUL"
+    },
+    {
+      "convoque": "Non",
+      "nom": "BUOT TRUFFERT TIMEO"
+    },
+    {
+      "convoque": "Non",
+      "nom": "CHANCEREL LYAM"
+    },
+    {
+      "convoque": "Non",
+      "nom": "CHANCEREL NAE "
+    },
+    {
+      "convoque": "Non",
+      "nom": "MONAR TYLIAN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "PESQUEREL LORYS"
+    },
+    {
+      "convoque": "Non",
+      "nom": "QUEUDEVILLE TIMEO"
+    },
+    {
+      "convoque": "Non",
+      "nom": "SARAC ALPASLAN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "UZUM HALIL"
+    },
+    {
+      "convoque": "Non",
+      "nom": "VILLETTE GABIN"
+    }
+  ],
+  "equipe": "U9 B",
+  "match_title": "aaaa",
+  "match_date": "12/05/2025",
+  "match_time": "14h00"
+}
