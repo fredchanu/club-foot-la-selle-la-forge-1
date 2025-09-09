@@ -1,0 +1,48 @@
+{
+  "joueurs": [
+    {
+      "convoque": "Non",
+      "nom": "AUBERT LUCAS"
+    },
+    {
+      "convoque": "Non",
+      "nom": "BENOIST LUCAS"
+    },
+    {
+      "convoque": "Non",
+      "nom": "BILLY ERNEST"
+    },
+    {
+      "convoque": "Non",
+      "nom": "COURSEAUX KILIAN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "DELIOT TITOUAN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "ESPANOCHE JUSTIN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "KILIC MIRAC"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LEGUERNEY MATHEO"
+    },
+    {
+      "convoque": "Non",
+      "nom": "MORIN EVAN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "PITEL LOUIS"
+    }
+  ],
+  "equipe": "U 15",
+  "match_title": "D",
+  "match_date": "D",
+  "match_time": "D"
+}
