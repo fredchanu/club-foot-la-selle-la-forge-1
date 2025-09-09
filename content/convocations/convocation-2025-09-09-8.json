@@ -1,0 +1,84 @@
+{
+  "joueurs": [
+    {
+      "convoque": "Non",
+      "nom": "AYDIN EMIRHAN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "AYDIN TUNAHAN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "DODEMAND CYPRIEN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "DUVAL GABIN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "ERGUN EYUP"
+    },
+    {
+      "convoque": "Non",
+      "nom": "GUNGOR YAKUP"
+    },
+    {
+      "convoque": "Non",
+      "nom": "HAMELIN SLAVEN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LEBRET RAPHAEL"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LECHAT ESTEBAN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LELARGE ESTEBAN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LESELLIER NOLAN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LESELLIER PAOLO"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LEROYER ALEX"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LORET GABIN "
+    },
+    {
+      "convoque": "Non",
+      "nom": "MOULIN AUBIN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "PARIS MARCUS"
+    },
+    {
+      "convoque": "Non",
+      "nom": "POUSSIER GASPARD"
+    },
+    {
+      "convoque": "Non",
+      "nom": "PRUNIER LOEN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "ROULLEAUX AXEL"
+    }
+  ],
+  "equipe": "U18",
+  "match_title": "A",
+  "match_date": "A",
+  "match_time": "A"
+}
