@@ -1,0 +1,56 @@
+{
+  "joueurs": [
+    {
+      "convoque": "Non",
+      "nom": "BAUCHERON MICKAEL"
+    },
+    {
+      "convoque": "Non",
+      "nom": "CHEDEVILLE JULIEN"
+    },
+    {
+      "convoque": "Non",
+      "nom": "CHENU SAMUEL"
+    },
+    {
+      "convoque": "Non",
+      "nom": "HAHN MICKAEL"
+    },
+    {
+      "convoque": "Non",
+      "nom": "HAUSMANN STEPHANE"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LAINE LUDOVIC"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LE BAILLY TEDDY"
+    },
+    {
+      "convoque": "Non",
+      "nom": "MACHADO TONY"
+    },
+    {
+      "convoque": "Non",
+      "nom": "MONTECOT STEPHANE"
+    },
+    {
+      "convoque": "Non",
+      "nom": "NEVOUX GWENAEL"
+    },
+    {
+      "convoque": "Non",
+      "nom": "SCHARNITZKY STEPHANE"
+    },
+    {
+      "convoque": "Non",
+      "nom": "STEFFEN FRANCK"
+    }
+  ],
+  "equipe": "VETERANS",
+  "match_title": "AS LA SELLE LA FORGE",
+  "match_date": "12/01",
+  "match_time": "19h00"
+}
