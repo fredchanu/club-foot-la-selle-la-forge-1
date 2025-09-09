@@ -1,21 +1,21 @@
 {
   "joueurs": [
     {
-      "convoque": "Oui",
-      "nom": "JOHN X "
+      "convoque": "Non",
+      "nom": "BAZIN PAUL"
     },
     {
-      "convoque": "Oui",
-      "nom": "joueur "
+      "convoque": "Non",
+      "nom": "BUOT TRUFFERT TIMEO"
     },
     {
-      "convoque": "Oui",
-      "nom": "joueurq"
+      "convoque": "Non",
+      "nom": "MONAR TYLIAN"
     }
   ],
   "equipe": "U7",
   "match_title": "LA SELLE VS FLERS",
   "match_date": "12/06/2025",
   "match_time": "14H",
-  "commentaire": "soyez là 15 min avant le match, apporté une bouteille d'eau"
+  "commentaire": ""
 }
