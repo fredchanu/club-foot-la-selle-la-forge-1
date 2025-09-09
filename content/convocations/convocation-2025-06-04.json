@@ -2,11 +2,23 @@
   "joueurs": [
     {
       "convoque": "Non",
+      "nom": "BAZIN PAUL"
+    },
+    {
+      "convoque": "Non",
+      "nom": "BUOT TRUFFERT TIMEO"
+    },
+    {
+      "convoque": "Non",
       "nom": "CHANCEREL LYAM"
     },
     {
       "convoque": "Non",
       "nom": "CHANCEREL NAE "
+    },
+    {
+      "convoque": "Non",
+      "nom": "MONAR TYLIAN"
     },
     {
       "convoque": "Non",
