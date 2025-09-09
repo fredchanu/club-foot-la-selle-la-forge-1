@@ -2,15 +2,23 @@
   "joueurs": [
     {
       "convoque": "Non",
-      "nom": "BAZIN PAUL"
+      "nom": "FOUQUE TIMEO"
     },
     {
       "convoque": "Non",
-      "nom": "BUOT TRUFFERT TIMEO"
+      "nom": "HELLER SACHA"
     },
     {
       "convoque": "Non",
-      "nom": "MONAR TYLIAN"
+      "nom": "LECOURT MALO"
+    },
+    {
+      "convoque": "Non",
+      "nom": "MACHADO LUCAS"
+    },
+    {
+      "convoque": "Non",
+      "nom": "PETIT ?"
     }
   ],
   "equipe": "U7",
