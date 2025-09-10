@@ -2,7 +2,7 @@ name: Mirror backup to private repo
 
 on:
   schedule:
-    - cron: "0 2 * * *"   # tous les jours 02:00 UTC
+    - cron: "0 2 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -33,34 +33,15 @@ jobs:
         run: |
           test -n "$BACKUP_TOKEN" || (echo "ERROR: BACKUP_TOKEN is empty" && exit 1)
 
-      - name: Check backup repo exists (GitHub API)
+      - name: Test auth (ls-remote)
         env:
           BACKUP_TOKEN: ${{ secrets.BACKUP_TOKEN }}
         run: |
-          code=$(curl -s -o /dev/null -w "%{http_code}" \
-            -H "Authorization: Bearer ${BACKUP_TOKEN}" \
-            https://api.github.com/repos/fredchanu/club-foot-la-selle-la-forge-backup)
-          echo "Repo lookup HTTP: $code"
-          [ "$code" = "200" ] || (echo "ERROR: backup repo not found or no access" && exit 1)
+          git ls-remote https://fredchanu:${BACKUP_TOKEN}@github.com/fredchanu/club-foot-la-selle-la-forge-backup.git
 
-      - name: Build Basic auth header
-        id: auth
+      - name: Mirror push (all refs)
         env:
           BACKUP_TOKEN: ${{ secrets.BACKUP_TOKEN }}
         run: |
-          AUTH=$(printf "%s" "fredchanu:${BACKUP_TOKEN}" | base64)
-          echo "AUTH_B64=$AUTH" >> $GITHUB_OUTPUT
-
-      - name: Test auth (git ls-remote with Basic header)
-        env:
-          AUTH_B64: ${{ steps.auth.outputs.AUTH_B64 }}
-        run: |
-          git -c http.extraHeader="Authorization: Basic ${AUTH_B64}" \
-              ls-remote https://github.com/fredchanu/club-foot-la-selle-la-forge-backup.git
-
-      - name: Mirror push (all refs) with Basic header
-        env:
-          AUTH_B64: ${{ steps.auth.outputs.AUTH_B64 }}
-        run: |
-          git -c http.extraHeader="Authorization: Basic ${AUTH_B64}" \
-              push --mirror --prune https://github.com/fredchanu/club-foot-la-selle-la-forge-backup.git
+          git push --mirror --prune \
+            https://fredchanu:${BACKUP_TOKEN}@github.com/fredchanu/club-foot-la-selle-la-forge-backup.git
