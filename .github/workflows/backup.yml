@@ -2,9 +2,8 @@ name: Mirror backup to private repo
 
 on:
   schedule:
-    # Tous les jours à 02:00 UTC (≈ 04:00 heure FR en été)
-    - cron: "0 2 * * *"
-  workflow_dispatch: {}  # lancement manuel possible
+    - cron: "0 2 * * *"   # tous les jours 02:00 UTC
+  workflow_dispatch: {}
 
 permissions:
   contents: read
@@ -21,32 +20,38 @@ jobs:
       - name: Checkout full history
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # on veut tout l'historique
+          fetch-depth: 0
 
       - name: Configure git identity
         run: |
           git config --global user.name "Backup Bot"
           git config --global user.email "bot@users.noreply.github.com"
 
-      - name: Add backup remote
+      - name: Sanity check - BACKUP_TOKEN present
         env:
           BACKUP_TOKEN: ${{ secrets.BACKUP_TOKEN }}
         run: |
-          set -e
-          # IMPORTANT: utiliser x-access-token:<TOKEN> dans l'URL
-          git remote add backup https://x-access-token:${BACKUP_TOKEN}@github.com/fredchanu/club-foot-la-selle-la-forge-backup.git
-          git remote -v
+          test -n "$BACKUP_TOKEN" || (echo "ERROR: BACKUP_TOKEN is empty" && exit 1)
 
-      - name: Test auth to backup (ls-remote)
+      - name: Check backup repo exists (GitHub API)
         env:
           BACKUP_TOKEN: ${{ secrets.BACKUP_TOKEN }}
         run: |
-          # Si l'auth est OK, ça liste les refs (ou rien) sans erreur
+          code=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "Authorization: Bearer ${BACKUP_TOKEN}" \
+            https://api.github.com/repos/fredchanu/club-foot-la-selle-la-forge-backup)
+          echo "Repo lookup HTTP: $code"
+          [ "$code" = "200" ] || (echo "ERROR: backup repo not found or no access" && exit 1)
+
+      - name: Test auth (git ls-remote)
+        env:
+          BACKUP_TOKEN: ${{ secrets.BACKUP_TOKEN }}
+        run: |
           git ls-remote https://x-access-token:${BACKUP_TOKEN}@github.com/fredchanu/club-foot-la-selle-la-forge-backup.git
 
-      - name: Mirror push (all refs)
+      - name: Mirror push (all refs, direct URL)
+        env:
+          BACKUP_TOKEN: ${{ secrets.BACKUP_TOKEN }}
         run: |
-          # Miroir complet: branches + tags, et purge des refs supprimées
-          git push --mirror --prune backup
-
-
+          git push --mirror --prune \
+            https://x-access-token:${BACKUP_TOKEN}@github.com/fredchanu/club-foot-la-selle-la-forge-backup.git
