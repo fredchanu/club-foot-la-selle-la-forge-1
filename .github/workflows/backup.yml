@@ -2,16 +2,11 @@ name: Mirror backup to private repo
 
 on:
   schedule:
-    # Tous les jours à 02:00 UTC (≈ 04:00 à Paris en été, 03:00 en hiver)
     - cron: "0 2 * * *"
-  workflow_dispatch: {}  # permet de lancer à la main
+  workflow_dispatch: {}
 
 permissions:
   contents: read
-
-concurrency:
-  group: backup-mirror
-  cancel-in-progress: false
 
 jobs:
   mirror:
@@ -21,17 +16,29 @@ jobs:
       - name: Checkout full history
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # on veut tout l'historique Git
+          fetch-depth: 0
 
       - name: Configure git identity
         run: |
           git config --global user.name "Backup Bot"
           git config --global user.email "bot@users.noreply.github.com"
 
-      - name: Add backup remote with PAT and push mirror
+      - name: Add backup remote
         env:
           BACKUP_TOKEN: ${{ secrets.BACKUP_TOKEN }}
         run: |
+          set -e
           git remote add backup https://${BACKUP_TOKEN}@github.com/fredchanu/club-foot-la-selle-la-forge-backup.git
           git remote -v
+
+      - name: Test auth to backup (ls-remote)
+        env:
+          BACKUP_TOKEN: ${{ secrets.BACKUP_TOKEN }}
+        run: |
+          # Si permissions OK, cette commande liste les refs distantes sans erreur
+          git ls-remote https://${BACKUP_TOKEN}@github.com/fredchanu/club-foot-la-selle-la-forge-backup.git || exit 128
+
+      - name: Mirror push (all refs)
+        run: |
           git push --mirror --prune backup
+
