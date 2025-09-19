@@ -2,19 +2,11 @@
   "joueurs": [
     {
       "convoque": "Oui",
-      "nom": "AUPEE LOUISA"
-    },
-    {
-      "convoque": "Oui",
       "nom": "CAILLY HOCQUET ORIANE"
     },
     {
       "convoque": "Oui",
-      "nom": "FLEURY NORA"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "GONDOUIN JULIETTE"
+      "nom": "AUPEE LOUISA"
     },
     {
       "convoque": "Oui",
@@ -26,27 +18,15 @@
     },
     {
       "convoque": "Oui",
-      "nom": "HILAIRE PAULINE"
-    },
-    {
-      "convoque": "Non",
-      "nom": "HUET LUCIE"
+      "nom": "FLEURY NORA"
     },
     {
       "convoque": "Oui",
-      "nom": "JUMELINE LEONIE"
+      "nom": "HILAIRE PAULINE"
     },
     {
       "convoque": "Oui",
       "nom": "LAINE GABRIELLE"
-    },
-    {
-      "convoque": "Non",
-      "nom": "LEBLOND CALI"
-    },
-    {
-      "convoque": "Non",
-      "nom": "LECROSNIER AMANDINE"
     },
     {
       "convoque": "Oui",
@@ -54,11 +34,11 @@
     },
     {
       "convoque": "Oui",
-      "nom": "NEVOUX LOUISE"
+      "nom": "VANNIER PAULINE"
     },
     {
-      "convoque": "Non",
-      "nom": "NEVOUX MARIE"
+      "convoque": "Oui",
+      "nom": "NEVOUX LOUISE"
     },
     {
       "convoque": "Oui",
@@ -66,11 +46,20 @@
     },
     {
       "convoque": "Oui",
-      "nom": "VANNIER PAULINE"
+      "nom": "NEVOUX MARIE"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "LECROSNIER Amandine"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "LEBLOND Cali"
     }
   ],
   "equipe": "SENIORS FEMININE",
-  "match_title": "AS LA SELLE LA FORGE - ECOUVES",
-  "match_date": "14 septembre 2025",
-  "match_time": "13h00"
+  "match_title": "LA FERRIERE AUX ETANGS - AS LA SELLE LA FORGE ",
+  "match_date": "21 septembre 2025",
+  "match_time": "12h00",
+  "commentaire": "Convocation au stade de la selle a 10h30"
 }
