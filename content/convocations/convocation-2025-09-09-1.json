@@ -2,11 +2,7 @@
   "joueurs": [
     {
       "convoque": "Oui",
-      "nom": "CAILLY HOCQUET ORIANE"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "AUPEE LOUISA"
+      "nom": "HILAIRE PAULINE"
     },
     {
       "convoque": "Oui",
@@ -18,34 +14,6 @@
     },
     {
       "convoque": "Oui",
-      "nom": "FLEURY NORA"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "HILAIRE PAULINE"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "LAINE GABRIELLE"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "LE ROUX MARIE-LOU"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "VANNIER PAULINE"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "NEVOUX LOUISE"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "PAINT ELISE"
-    },
-    {
-      "convoque": "Oui",
       "nom": "NEVOUX MARIE"
     },
     {
@@ -54,12 +22,44 @@
     },
     {
       "convoque": "Oui",
-      "nom": "LEBLOND Cali"
+      "nom": "NEVOUX LOUISE"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "AUPEE LOUISA"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "CAILLY HOCQUET ORIANE"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "HILAIRE Salomé "
+    },
+    {
+      "convoque": "Oui",
+      "nom": "VAUBAILLON Laurette"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "PAINT ELISE"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "JUMELINE Léonie "
+    },
+    {
+      "convoque": "Oui",
+      "nom": "GONDOUIN Juliette"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "LE ROUX Marie-Lou"
     }
   ],
   "equipe": "SENIORS FEMININE",
-  "match_title": "LA FERRIERE AUX ETANGS - AS LA SELLE LA FORGE ",
-  "match_date": "21 septembre 2025",
-  "match_time": "12h00",
-  "commentaire": "Convocation au stade de la selle a 10h30"
+  "match_title": "AS LA SELLE LA FORGE - TINCHEBRAY",
+  "match_date": "5 OCTOBRE 2025",
+  "match_time": "13h00",
+  "commentaire": "Convocation au stade de la selle a 12h00"
 }
