@@ -18,10 +18,6 @@
     },
     {
       "convoque": "Oui",
-      "nom": "LECROSNIER Amandine"
-    },
-    {
-      "convoque": "Oui",
       "nom": "NEVOUX LOUISE"
     },
     {
@@ -34,10 +30,6 @@
     },
     {
       "convoque": "Oui",
-      "nom": "HILAIRE Salomé "
-    },
-    {
-      "convoque": "Oui",
       "nom": "VAUBAILLON Laurette"
     },
     {
@@ -46,20 +38,28 @@
     },
     {
       "convoque": "Oui",
-      "nom": "JUMELINE Léonie "
-    },
-    {
-      "convoque": "Oui",
       "nom": "GONDOUIN Juliette"
     },
     {
       "convoque": "Oui",
       "nom": "LE ROUX Marie-Lou"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "HUET Lucie"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "LAINE Gabrielle"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "FLEURY Nora"
     }
   ],
   "equipe": "SENIORS FEMININE",
-  "match_title": "AS LA SELLE LA FORGE - TINCHEBRAY",
-  "match_date": "5 OCTOBRE 2025",
+  "match_title": "LA FERTE MACE",
+  "match_date": "12 OCTOBRE 2025",
   "match_time": "13h00",
-  "commentaire": "Convocation au stade de la selle a 12h00"
+  "commentaire": "Convocation au stade de la selle a 11H15"
 }
