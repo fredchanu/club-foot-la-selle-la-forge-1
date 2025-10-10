@@ -6,15 +6,7 @@
     },
     {
       "convoque": "Non",
-      "nom": "CHEDEVILLE JULIEN"
-    },
-    {
-      "convoque": "Non",
-      "nom": "CHENU SAMUEL"
-    },
-    {
-      "convoque": "Non",
-      "nom": "HAHN MICKAEL"
+      "nom": "LAINE LUDOVIC"
     },
     {
       "convoque": "Non",
@@ -22,23 +14,7 @@
     },
     {
       "convoque": "Non",
-      "nom": "LAINE LUDOVIC"
-    },
-    {
-      "convoque": "Non",
-      "nom": "LE BAILLY TEDDY"
-    },
-    {
-      "convoque": "Non",
-      "nom": "MACHADO TONY"
-    },
-    {
-      "convoque": "Non",
       "nom": "MONTECOT STEPHANE"
-    },
-    {
-      "convoque": "Non",
-      "nom": "NEVOUX GWENAEL"
     },
     {
       "convoque": "Non",
@@ -51,6 +27,14 @@
     {
       "convoque": "Non",
       "nom": "LESELLIER MANUEL"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "OSMOND Hervé "
+    },
+    {
+      "convoque": "Oui",
+      "nom": "FILLET Philippe"
     }
   ],
   "equipe": "VETERANS",
