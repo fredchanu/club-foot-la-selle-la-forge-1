@@ -2,11 +2,7 @@
   "joueurs": [
     {
       "convoque": "Oui",
-      "nom": "HAUSMANN STEPHANE"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "BAUCHERON MICKAEL"
+      "nom": "SCHARNITZKY STEPHANE"
     },
     {
       "convoque": "Oui",
@@ -14,15 +10,15 @@
     },
     {
       "convoque": "Oui",
-      "nom": "MONTECOT STEPHANE"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "SCHARNITZKY STEPHANE"
-    },
-    {
-      "convoque": "Oui",
       "nom": "STEFFEN FRANCK"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "BAUCHERON MICKAEL"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "MONTECOT STEPHANE"
     },
     {
       "convoque": "Oui",
@@ -30,16 +26,36 @@
     },
     {
       "convoque": "Oui",
+      "nom": "GRIPON Marco"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "HAUSMANN STEPHANE"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "ZENITER Youssef"
+    },
+    {
+      "convoque": "Oui",
       "nom": "OSMOND Hervé "
     },
     {
       "convoque": "Oui",
-      "nom": "FILLET Philippe"
+      "nom": "YILDIZ Taner"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "LE BAILLY Teddy"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "LESELLIER Didier"
     }
   ],
   "equipe": "VETERANS",
-  "match_title": "LE HAVRE - AS LA SELLE LA FORGE",
-  "match_date": "12/10",
-  "match_time": "14h00",
-  "commentaire": "Départ du stade 8h45"
+  "match_title": "BRIOUZEE - AS LA SELLE LA FORGE",
+  "match_date": "17/10",
+  "match_time": "21h00",
+  "commentaire": "Départ du stade 19h45"
 }
