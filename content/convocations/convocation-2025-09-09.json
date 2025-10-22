@@ -18,6 +18,14 @@
     },
     {
       "convoque": "Oui",
+      "nom": "LESELLIER Didier"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "ZENITER Youssef"
+    },
+    {
+      "convoque": "Oui",
       "nom": "MONTECOT STEPHANE"
     },
     {
@@ -34,15 +42,7 @@
     },
     {
       "convoque": "Oui",
-      "nom": "ZENITER Youssef"
-    },
-    {
-      "convoque": "Oui",
       "nom": "OSMOND Hervé "
-    },
-    {
-      "convoque": "Oui",
-      "nom": "LESELLIER Didier"
     },
     {
       "convoque": "Oui",
@@ -54,7 +54,7 @@
     },
     {
       "convoque": "Oui",
-      "nom": "NE VOUS Gwenael"
+      "nom": "NEVOUX Gwenael"
     }
   ],
   "equipe": "VETERANS",
