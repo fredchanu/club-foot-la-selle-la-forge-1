@@ -42,20 +42,24 @@
     },
     {
       "convoque": "Oui",
-      "nom": "YILDIZ Taner"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "LE BAILLY Teddy"
-    },
-    {
-      "convoque": "Oui",
       "nom": "LESELLIER Didier"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "BAZIN Anthony"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "CHENU Samuel"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "NE VOUS Gwenael"
     }
   ],
   "equipe": "VETERANS",
-  "match_title": "BRIOUZE - AS LA SELLE LA FORGE",
-  "match_date": "17/10",
+  "match_title": "ST GEORGES DES GROSEILLERS - AS LA SELLE LA FORGE",
+  "match_date": "24/10",
   "match_time": "21h00",
   "commentaire": "Départ du stade 19h45"
 }
