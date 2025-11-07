@@ -38,23 +38,11 @@
     },
     {
       "convoque": "Oui",
-      "nom": "GONDOUIN Juliette"
-    },
-    {
-      "convoque": "Oui",
       "nom": "LE ROUX Marie-Lou"
     },
     {
       "convoque": "Oui",
-      "nom": "HUET Lucie"
-    },
-    {
-      "convoque": "Oui",
       "nom": "LAINE Gabrielle"
-    },
-    {
-      "convoque": "Non",
-      "nom": "FLEURY Nora"
     },
     {
       "convoque": "Oui",
@@ -66,8 +54,8 @@
     }
   ],
   "equipe": "SENIORS FEMININE",
-  "match_title": "ASS / US ANDAINES",
-  "match_date": "2 NOVEMBRE 2025",
+  "match_title": "L'AIGLE LE SAP / ASS",
+  "match_date": "9 NOVEMBRE 2025",
   "match_time": "12h30",
-  "commentaire": "Convocation au stade de la selle a 11H30"
+  "commentaire": "Convocation au stade de la selle a 10h00"
 }
