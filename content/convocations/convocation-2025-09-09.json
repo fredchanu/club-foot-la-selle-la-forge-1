@@ -10,6 +10,10 @@
     },
     {
       "convoque": "Oui",
+      "nom": "LESELLIER Didier"
+    },
+    {
+      "convoque": "Oui",
       "nom": "STEFFEN FRANCK"
     },
     {
@@ -18,23 +22,11 @@
     },
     {
       "convoque": "Oui",
-      "nom": "LESELLIER Didier"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "ZENITER Youssef"
-    },
-    {
-      "convoque": "Oui",
       "nom": "MONTECOT STEPHANE"
     },
     {
       "convoque": "Oui",
       "nom": "LESELLIER MANUEL"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "GRIPON Marco"
     },
     {
       "convoque": "Oui",
@@ -50,16 +42,20 @@
     },
     {
       "convoque": "Oui",
-      "nom": "CHENU Samuel"
+      "nom": "NEVOUX Gwenael"
     },
     {
       "convoque": "Oui",
-      "nom": "NEVOUX Gwenael"
+      "nom": "FILLET Philippe "
+    },
+    {
+      "convoque": "Oui",
+      "nom": "LEBAILLY Teddy"
     }
   ],
   "equipe": "VETERANS",
-  "match_title": "ST GEORGES DES GROSEILLERS - AS LA SELLE LA FORGE",
-  "match_date": "24/10",
+  "match_title": "AS LA SELLE LA FORGE - BRIOUZE ",
+  "match_date": "14/11",
   "match_time": "21h00",
-  "commentaire": "Départ du stade 19h45"
+  "commentaire": "Au stade 20h.  20h15"
 }
