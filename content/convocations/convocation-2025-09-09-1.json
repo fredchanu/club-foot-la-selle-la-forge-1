@@ -13,7 +13,7 @@
       "nom": "HILAIRE ANAELLE"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "NEVOUX MARIE"
     },
     {
@@ -26,23 +26,7 @@
     },
     {
       "convoque": "Oui",
-      "nom": "CAILLY HOCQUET ORIANE"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "VAUBAILLON Laurette"
-    },
-    {
-      "convoque": "Oui",
       "nom": "PAINT ELISE"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "LE ROUX Marie-Lou"
-    },
-    {
-      "convoque": "Non",
-      "nom": "LAINE Gabrielle"
     },
     {
       "convoque": "Oui",
@@ -50,20 +34,20 @@
     },
     {
       "convoque": "Oui",
-      "nom": "HILAIRE Salomé"
-    },
-    {
-      "convoque": "Oui",
       "nom": "HUET LUCIE"
     },
     {
       "convoque": "Oui",
-      "nom": "GONDOUIN Juliette"
+      "nom": "LECROSNIER Amandine"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "VANNIER Pauline"
     }
   ],
   "equipe": "SENIORS FEMININE",
-  "match_title": "ASS / CEAUCE",
-  "match_date": "16 NOVEMBRE 2025",
-  "match_time": "12h30",
-  "commentaire": "Convocation au stade de la selle a 11h30"
+  "match_title": "Hauts du perche - ASS",
+  "match_date": "7 DECEMBRE 2025",
+  "match_time": "13h00",
+  "commentaire": "Convocation au stade de la selle a 10h00"
 }
