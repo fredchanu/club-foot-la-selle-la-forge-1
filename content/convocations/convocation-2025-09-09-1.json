@@ -33,11 +33,11 @@
       "nom": "JUMELINE LEONIE"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "HUET LUCIE"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "LECROSNIER Amandine"
     },
     {
@@ -47,11 +47,27 @@
     {
       "convoque": "Oui",
       "nom": "FLEURY Nora"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "GONDOUIN Juliette"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "VAUBAILLON Laurette"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "CAILLY HOCQUET Oriane"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "LEROUX Marie-Lou"
     }
   ],
   "equipe": "SENIORS FEMININE",
-  "match_title": "Hauts du perche - ASS",
-  "match_date": "7 DECEMBRE 2025",
-  "match_time": "13h00",
-  "commentaire": "Convocation au stade de la selle a 10h00"
+  "match_title": "ASS - ARGENTAN",
+  "match_date": "01/02/2026",
+  "match_time": "12h30",
+  "commentaire": "Convocation au stade de la selle a 11h30"
 }
