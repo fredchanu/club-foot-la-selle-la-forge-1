@@ -2,15 +2,15 @@
   "joueurs": [
     {
       "convoque": "Oui",
+      "nom": "LESELLIER Didier"
+    },
+    {
+      "convoque": "Oui",
       "nom": "SCHARNITZKY STEPHANE"
     },
     {
       "convoque": "Oui",
       "nom": "LAINE LUDOVIC"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "LESELLIER Didier"
     },
     {
       "convoque": "Oui",
@@ -38,24 +38,24 @@
     },
     {
       "convoque": "Oui",
-      "nom": "BAZIN Anthony"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "NEVOUX Gwenael"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "FILLET Philippe "
-    },
-    {
-      "convoque": "Oui",
       "nom": "LEBAILLY Teddy"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "MACHADO Tony"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "YILDIZ Taner"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "CHENU Samuel"
     }
   ],
   "equipe": "VETERANS",
-  "match_title": "AS LA SELLE LA FORGE - BRIOUZE ",
-  "match_date": "14/11",
+  "match_title": "AS LA SELLE LA FORGE - ST GEORGES",
+  "match_date": "30/01/2026",
   "match_time": "21h00",
   "commentaire": "Au stade 20h.  20h15"
 }
