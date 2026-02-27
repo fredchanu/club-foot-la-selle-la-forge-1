@@ -13,7 +13,7 @@
       "nom": "HILAIRE ANAELLE"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "NEVOUX MARIE"
     },
     {
@@ -22,11 +22,11 @@
     },
     {
       "convoque": "Oui",
-      "nom": "AUPEE LOUISA"
+      "nom": "PAINT ELISE"
     },
     {
       "convoque": "Oui",
-      "nom": "PAINT ELISE"
+      "nom": "AUPEE LOUISA"
     },
     {
       "convoque": "Oui",
@@ -45,11 +45,11 @@
       "nom": "VANNIER Pauline"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "FLEURY Nora"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "GONDOUIN Juliette"
     },
     {
@@ -66,8 +66,8 @@
     }
   ],
   "equipe": "SENIORS FEMININE",
-  "match_title": "ASS - ARGENTAN",
-  "match_date": "01/02/2026",
+  "match_title": "LA FERRIERE AUX ETANGS - AS LA SELLE LA FORGE ",
+  "match_date": "01/03/2026",
   "match_time": "12h30",
-  "commentaire": "Convocation au stade de la selle a 11h30"
+  "commentaire": "Convocation au stade de la selle à 11h00. Match de coupe"
 }
