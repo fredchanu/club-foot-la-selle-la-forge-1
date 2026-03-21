@@ -13,7 +13,7 @@
       "nom": "HILAIRE ANAELLE"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "NEVOUX MARIE"
     },
     {
@@ -45,11 +45,11 @@
       "nom": "VANNIER Pauline"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "FLEURY Nora"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "GONDOUIN Juliette"
     },
     {
@@ -57,29 +57,29 @@
       "nom": "VAUBAILLON Laurette"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "CAILLY HOCQUET Oriane"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "LEROUX Marie-Lou"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "HILAIRE Salomé "
     },
     {
       "convoque": "Oui",
-      "nom": "LEBLOND Cali"
+      "nom": "LAINE Gabrielle "
     },
     {
-      "convoque": "Oui",
-      "nom": "LAINE Gabrielle "
+      "convoque": "Non",
+      "nom": "LEBLOND Cali"
     }
   ],
   "equipe": "SENIORS FEMININE",
-  "match_title": "LA FERRIERE AUX ETANGS - AS LA SELLE LA FORGE ",
-  "match_date": "01/03/2026",
+  "match_title": "ASS - LA FERTE MACE ",
+  "match_date": "22/03/2026",
   "match_time": "12h30",
-  "commentaire": "Convocation au stade de la selle à 11h00. Match de coupe"
+  "commentaire": "Convocation au stade de la selle à 11h30"
 }
