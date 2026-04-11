@@ -45,7 +45,7 @@
       "nom": "VANNIER Pauline"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "FLEURY Nora"
     },
     {
@@ -61,7 +61,7 @@
       "nom": "CAILLY HOCQUET Oriane"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "LEROUX Marie-Lou"
     },
     {
@@ -78,8 +78,8 @@
     }
   ],
   "equipe": "SENIORS FEMININE",
-  "match_title": "ASS - LA FERTE MACE ",
-  "match_date": "22/03/2026",
-  "match_time": "12h30",
-  "commentaire": "Convocation au stade de la selle à 11h30"
+  "match_title": "ECOUVES - ASS",
+  "match_date": "12/04/2026",
+  "match_time": "13h00",
+  "commentaire": "Convocation au stade de la selle à 10h50"
 }
