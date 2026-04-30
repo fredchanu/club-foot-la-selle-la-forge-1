@@ -6,11 +6,11 @@
     },
     {
       "convoque": "Oui",
-      "nom": "HAHN LOISE"
+      "nom": "HILAIRE ANAELLE"
     },
     {
       "convoque": "Oui",
-      "nom": "HILAIRE ANAELLE"
+      "nom": "HAHN LOISE"
     },
     {
       "convoque": "Oui",
@@ -21,7 +21,7 @@
       "nom": "NEVOUX LOUISE"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "PAINT ELISE"
     },
     {
@@ -65,11 +65,11 @@
       "nom": "LEROUX Marie-Lou"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "HILAIRE Salomé "
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "LAINE Gabrielle "
     },
     {
@@ -78,8 +78,8 @@
     }
   ],
   "equipe": "SENIORS FEMININE",
-  "match_title": "ECOUVES - ASS",
-  "match_date": "12/04/2026",
-  "match_time": "13h00",
-  "commentaire": "Convocation au stade de la selle à 10h50"
+  "match_title": "ASS - LA FERRIERE AUX ETANGS",
+  "match_date": "30/04/2026",
+  "match_time": "20h00",
+  "commentaire": "Convocation au stade de la selle à 19h00"
 }
