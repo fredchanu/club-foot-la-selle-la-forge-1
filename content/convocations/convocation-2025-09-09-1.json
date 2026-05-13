@@ -21,10 +21,6 @@
       "nom": "NEVOUX LOUISE"
     },
     {
-      "convoque": "Non",
-      "nom": "PAINT ELISE"
-    },
-    {
       "convoque": "Oui",
       "nom": "AUPEE LOUISA"
     },
@@ -45,11 +41,11 @@
       "nom": "VANNIER Pauline"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "FLEURY Nora"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "GONDOUIN Juliette"
     },
     {
@@ -69,17 +65,21 @@
       "nom": "HILAIRE Salomé "
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "LAINE Gabrielle "
     },
     {
       "convoque": "Non",
       "nom": "LEBLOND Cali"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "PAINT ELISE"
     }
   ],
   "equipe": "SENIORS FEMININE",
-  "match_title": "ASS - LA FERRIERE AUX ETANGS",
-  "match_date": "30/04/2026",
-  "match_time": "20h00",
-  "commentaire": "Convocation au stade de la selle à 19h00"
+  "match_title": "ASS - ES ECOUVES",
+  "match_date": "14/05/2026",
+  "match_time": "13h00",
+  "commentaire": "Convocation au stade de la selle à 12H00\nDemi-finale coupe de l'Orne"
 }
