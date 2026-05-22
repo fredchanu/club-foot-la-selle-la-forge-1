@@ -6,11 +6,11 @@
     },
     {
       "convoque": "Oui",
-      "nom": "SCHARNITZKY STEPHANE"
+      "nom": "LAINE LUDOVIC"
     },
     {
       "convoque": "Oui",
-      "nom": "LAINE LUDOVIC"
+      "nom": "SCHARNITZKY STEPHANE"
     },
     {
       "convoque": "Oui",
@@ -33,7 +33,7 @@
       "nom": "HAUSMANN STEPHANE"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "OSMOND Hervé "
     },
     {
@@ -41,7 +41,7 @@
       "nom": "LEBAILLY Teddy"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "MACHADO Tony"
     },
     {
@@ -55,7 +55,7 @@
   ],
   "equipe": "VETERANS",
   "match_title": "AS LA SELLE LA FORGE - ST GEORGES",
-  "match_date": "30/01/2026",
+  "match_date": "22/05/2026",
   "match_time": "21h00",
   "commentaire": "Au stade 20h.  20h15"
 }
