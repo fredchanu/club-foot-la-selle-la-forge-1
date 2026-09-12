@@ -10,19 +10,15 @@
     },
     {
       "convoque": "Oui",
-      "nom": "HAHN LOISE"
-    },
-    {
-      "convoque": "Non",
-      "nom": "NEVOUX MARIE"
-    },
-    {
-      "convoque": "Oui",
       "nom": "NEVOUX LOUISE"
     },
     {
       "convoque": "Non",
       "nom": "AUPEE LOUISA"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "HAHN LOISE"
     },
     {
       "convoque": "Oui",
@@ -35,6 +31,18 @@
     {
       "convoque": "Oui",
       "nom": "LEROUX Marie-Lou"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "CORBEAU Maude"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "CHEVALIER Celia"
+    },
+    {
+      "convoque": "Oui",
+      "nom": "CENIER Lola"
     }
   ],
   "equipe": "SENIORS FEMININE",
