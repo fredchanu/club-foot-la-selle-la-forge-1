@@ -1,11 +1,11 @@
 {
   "joueurs": [
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "HILAIRE PAULINE"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "HILAIRE ANAELLE"
     },
     {
@@ -13,7 +13,7 @@
       "nom": "HAHN LOISE"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "NEVOUX MARIE"
     },
     {
@@ -21,7 +21,7 @@
       "nom": "NEVOUX LOUISE"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "AUPEE LOUISA"
     },
     {
@@ -29,57 +29,17 @@
       "nom": "JUMELINE LEONIE"
     },
     {
-      "convoque": "Non",
-      "nom": "HUET LUCIE"
-    },
-    {
-      "convoque": "Non",
-      "nom": "LECROSNIER Amandine"
-    },
-    {
       "convoque": "Oui",
       "nom": "VANNIER Pauline"
     },
     {
-      "convoque": "Non",
-      "nom": "FLEURY Nora"
-    },
-    {
-      "convoque": "Non",
-      "nom": "GONDOUIN Juliette"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "VAUBAILLON Laurette"
-    },
-    {
-      "convoque": "Non",
-      "nom": "CAILLY HOCQUET Oriane"
-    },
-    {
       "convoque": "Oui",
       "nom": "LEROUX Marie-Lou"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "HILAIRE Salomé "
-    },
-    {
-      "convoque": "Non",
-      "nom": "LAINE Gabrielle "
-    },
-    {
-      "convoque": "Non",
-      "nom": "LEBLOND Cali"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "PAINT ELISE"
     }
   ],
   "equipe": "SENIORS FEMININE",
-  "match_title": "ASS - ES ECOUVES",
-  "match_date": "14/05/2026",
-  "match_time": "13h00",
-  "commentaire": "Convocation au stade de la selle à 12H00\nDemi-finale coupe de l'Orne"
+  "match_title": "ASS - Tinchebray /la Ferrière ",
+  "match_date": "12/09/2026",
+  "match_time": "19h15",
+  "commentaire": "Convocation au stade de la selle à 18h15\nChampionnat "
 }
