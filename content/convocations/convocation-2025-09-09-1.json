@@ -1,11 +1,11 @@
 {
   "joueurs": [
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "HILAIRE PAULINE"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "HILAIRE ANAELLE"
     },
     {
@@ -21,7 +21,7 @@
       "nom": "HAHN LOISE"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "JUMELINE LEONIE"
     },
     {
@@ -58,8 +58,8 @@
     }
   ],
   "equipe": "SENIORS FEMININE",
-  "match_title": "ASS - Tinchebray /la Ferrière ",
-  "match_date": "12/09/2026",
+  "match_title": "ASS - La Ferté/St Georges",
+  "match_date": "19/09/2026",
   "match_time": "19h15",
   "commentaire": "Convocation au stade de la selle à 18h15\nChampionnat "
 }
