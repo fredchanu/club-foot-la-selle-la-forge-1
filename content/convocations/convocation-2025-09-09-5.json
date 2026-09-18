@@ -2,35 +2,35 @@
   "joueurs": [
     {
       "convoque": "Non",
-      "nom": "BENOIST MAEL "
+      "nom": "BENOIST Mael"
     },
     {
       "convoque": "Non",
-      "nom": "BOUKMOUCH WAIL"
+      "nom": "ACAR Eren"
     },
     {
       "convoque": "Non",
-      "nom": "DUBREIL CLOUARD JUDD"
+      "nom": "AKTAS Emin"
     },
     {
       "convoque": "Non",
-      "nom": "ERNOUX MALO"
+      "nom": "AMHAOU Walid"
     },
     {
       "convoque": "Non",
-      "nom": "GUNGOR ADIL"
+      "nom": "BOULAY Léo"
     },
     {
       "convoque": "Non",
-      "nom": "HUREL SOAN"
+      "nom": "EKER Kerem"
     },
     {
       "convoque": "Non",
-      "nom": "KOSAR ENES"
+      "nom": "GUNGOR Nazim"
     },
     {
       "convoque": "Non",
-      "nom": "LALANDE MANSOURI LOUNIS"
+      "nom": "HUE Gabin"
     },
     {
       "convoque": "Non",
@@ -38,27 +38,27 @@
     },
     {
       "convoque": "Non",
-      "nom": "LELARGE NOLAN"
+      "nom": "LALANDE MANSOURI Lounis"
     },
     {
       "convoque": "Non",
-      "nom": "ONAL IBRAHIM"
+      "nom": "LAMSYAH Jad"
     },
     {
       "convoque": "Non",
-      "nom": "PELLUET OSCAR"
+      "nom": "LAZOUACHE Medhi"
     },
     {
       "convoque": "Non",
-      "nom": "SEBIRE NATHAN"
+      "nom": "LEGER léo"
     },
     {
       "convoque": "Non",
-      "nom": "SUBASI ILYAS"
+      "nom": "LELIEVRE GANDON Alan"
     },
     {
       "convoque": "Non",
-      "nom": "TANCRAY MATHIS"
+      "nom": "LESEILLIER Oriano"
     },
     {
       "convoque": "Non",
@@ -66,19 +66,63 @@
     },
     {
       "convoque": "Non",
-      "nom": "DELIOT ROMANE "
+      "nom": "LOUIS Denzel"
     },
     {
       "convoque": "Non",
-      "nom": "OZDEMIR EYUP"
+      "nom": "MANSOURI Kais"
     },
     {
       "convoque": "Non",
-      "nom": "MONAR KELHYA"
+      "nom": "MEZIANI Aryles"
+    },
+    {
+      "convoque": "Non",
+      "nom": "ON Erturgul"
+    },
+    {
+      "convoque": "Non",
+      "nom": "OZDEMIR Ahmet"
+    },
+    {
+      "convoque": "Non",
+      "nom": "OZDEMIR Omer"
+    },
+    {
+      "convoque": "Non",
+      "nom": "OZKOCUM Berat Baki"
+    },
+    {
+      "convoque": "Non",
+      "nom": "OZTURK Selim"
+    },
+    {
+      "convoque": "Non",
+      "nom": "SLIMANI Aysar"
+    },
+    {
+      "convoque": "Non",
+      "nom": "SUBASI Ilyas"
+    },
+    {
+      "convoque": "Non",
+      "nom": "TRUFFERT BUOT Ylenzo"
+    },
+    {
+      "convoque": "Non",
+      "nom": "UZUM HAMZA"
+    },
+    {
+      "convoque": "Non",
+      "nom": "VOITURIER Kais"
+    },
+    {
+      "convoque": "Non",
+      "nom": "YILDIZ Hamza"
     }
   ],
   "equipe": "U13 A ",
-  "match_title": "AS",
-  "match_date": "1",
-  "match_time": "1"
+  "match_title": "US ALENÇON B - AS LA SELLE LA FORGE ",
+  "match_date": "19/09/2026",
+  "match_time": "13H30"
 }
