@@ -2,47 +2,47 @@
   "joueurs": [
     {
       "convoque": "Non",
-      "nom": "AUBERT LEO"
+      "nom": "AUBERT Léo"
     },
     {
       "convoque": "Non",
-      "nom": "AUMONT HELIX NOA"
+      "nom": "AUMONT HELIX Noa"
     },
     {
       "convoque": "Non",
-      "nom": "BARADU HUGO"
+      "nom": "BARADU Hugo"
     },
     {
       "convoque": "Non",
-      "nom": "BLANCHARD LAMACHE TIM"
+      "nom": "BLANCHARD LAMACHE Tim"
     },
     {
       "convoque": "Non",
-      "nom": "CHEDEVILLE GASPARD"
+      "nom": "CHEDEVILLE Gaspard"
     },
     {
       "convoque": "Non",
-      "nom": "COBAN EMIR"
+      "nom": "COBAN Emir"
     },
     {
       "convoque": "Non",
-      "nom": "DROULLON JULES"
+      "nom": "DROULLON Jules"
     },
     {
       "convoque": "Non",
-      "nom": "HOYEAU NICOLAS"
+      "nom": "CHANCEREL Nae"
     },
     {
       "convoque": "Non",
-      "nom": "LE BOISSELLIER TOM"
+      "nom": "LE BOISSELLIER Tom"
     },
     {
       "convoque": "Non",
-      "nom": "LE CORRE JULIEN"
+      "nom": "LE CORRE Julien"
     },
     {
       "convoque": "Non",
-      "nom": "LESELLIER ORIANO"
+      "nom": "CHANU Malo"
     },
     {
       "convoque": "Non",
@@ -50,43 +50,56 @@
     },
     {
       "convoque": "Non",
-      "nom": "MACHADO CLEMENT"
+      "nom": "AMORIN MACHADO Clément"
     },
     {
       "convoque": "Non",
-      "nom": "MANSOURI KAIS"
+      "nom": "COLLIN Lorenzo"
     },
     {
       "convoque": "Non",
-      "nom": "MAZIANI ARYLES"
+      "nom": "COURTEILLE Tim"
     },
     {
       "convoque": "Non",
-      "nom": "ON ERTURGUL"
+      "nom": "FERNANDEZ Dylan"
     },
     {
       "convoque": "Non",
-      "nom": "OZKOCUM BERAT"
+      "nom": "HUE Mathys"
     },
     {
       "convoque": "Non",
-      "nom": "TRUFFERT BUOT YLENZO"
+      "nom": "LOUVAIN Nino"
     },
     {
       "convoque": "Non",
-      "nom": "UZUM HAMZA"
+      "nom": "PESQUEREL Lorys"
     },
     {
       "convoque": "Non",
-      "nom": "YILDIZ HAMZA"
+      "nom": "QUEUDEVILLE Timéo"
     },
     {
       "convoque": "Non",
-      "nom": "OZDEMIR OMER"
+      "nom": "RIVIERE Amaury"
+    },
+    {
+      "convoque": "Non",
+      "nom": "SARAC Alpaslan"
+    },
+    {
+      "convoque": "Non",
+      "nom": "UZUM Halil"
+    },
+    {
+      "convoque": "Non",
+      "nom": "VILLETTE Gabin"
     }
   ],
   "equipe": "U11 B ",
   "match_title": "AS LA SELLE LA FORGE - ",
-  "match_date": "12",
-  "match_time": "10h00"
+  "match_date": "19/09/2026",
+  "match_time": "10h00",
+  "commentaire": ""
 }
