@@ -2,51 +2,39 @@
   "joueurs": [
     {
       "convoque": "Non",
-      "nom": "BAZIN PAUL"
+      "nom": "BAZIN Paul"
     },
     {
       "convoque": "Non",
-      "nom": "BUOT TRUFFERT TIMEO"
+      "nom": "AMORIM MACHADO Lucas"
     },
     {
       "convoque": "Non",
-      "nom": "CHANCEREL LYAM"
+      "nom": "LORET Augustin"
     },
     {
       "convoque": "Non",
-      "nom": "CHANCEREL NAE "
+      "nom": "JULIENNE Célian"
     },
     {
       "convoque": "Non",
-      "nom": "MONAR TYLIAN"
+      "nom": "BUOT TRUFFERT Timéo"
     },
     {
       "convoque": "Non",
-      "nom": "PESQUEREL LORYS"
+      "nom": "MONAR Tylian"
     },
     {
       "convoque": "Non",
-      "nom": "QUEUDEVILLE TIMEO"
+      "nom": "PELLUET Eden"
     },
     {
       "convoque": "Non",
-      "nom": "SARAC ALPASLAN"
-    },
-    {
-      "convoque": "Non",
-      "nom": "UZUM HALIL"
-    },
-    {
-      "convoque": "Non",
-      "nom": "VILLETTE GABIN"
-    },
-    {
-      "convoque": "Non",
-      "nom": "JULIENNE CELIAN "
+      "nom": "WALKER Louis"
     }
   ],
   "equipe": "U9 A",
-  "match_title": "aaaa ",
-  "match_date": "12/05/2025",
-  "match_time": "14h00"
+  "match_title": "Plateau à Messei",
+  "match_date": "19/09/2026",
+  "match_time": "10H30"
 }
