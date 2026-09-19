@@ -1,7 +1,7 @@
 {
   "joueurs": [
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "ABAIDIA Ryad"
     },
     {
@@ -9,11 +9,11 @@
       "nom": "AKTAS Emir"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "AKTAS Mete"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "ALGHORY Mohammad"
     },
     {
@@ -21,7 +21,7 @@
       "nom": "CHIBANI Zyiad"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "DIANKOLELA Anthonin"
     },
     {
@@ -33,11 +33,11 @@
       "nom": "ERGEBE Berat"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "KOSAR Enes"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "LELARGE Nolan"
     },
     {
@@ -45,31 +45,31 @@
       "nom": "NARDIN DESILE Marius"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "ONAL Ibrahim"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "OZDAG Emir"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "OZDEMIR Eyup"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "PELLUET Oscar"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "SEBIRE Nathan"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "TANCRAY Mathis"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "TESLENKO Yelysei"
     },
     {
@@ -77,7 +77,7 @@
       "nom": "YILDIZ Furkan"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "AYTAN Eyup"
     }
   ],
