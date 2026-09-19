@@ -10,15 +10,15 @@
     },
     {
       "convoque": "Non",
-      "nom": "DODEMAND CYPRIEN"
+      "nom": "AUBERT Lucas"
     },
     {
       "convoque": "Non",
-      "nom": "DUVAL GABIN"
+      "nom": "COURSEAUX Kilian"
     },
     {
       "convoque": "Non",
-      "nom": "ERGUN EYUP"
+      "nom": "DELIOT Titouan"
     },
     {
       "convoque": "Non",
@@ -26,7 +26,7 @@
     },
     {
       "convoque": "Non",
-      "nom": "HAMELIN SLAVEN"
+      "nom": "DEMIR Omer"
     },
     {
       "convoque": "Non",
@@ -50,15 +50,15 @@
     },
     {
       "convoque": "Non",
-      "nom": "LEROYER ALEX"
+      "nom": "ESPANOCHE Justin"
     },
     {
       "convoque": "Non",
-      "nom": "LORET GABIN "
+      "nom": "GOULET Gaston"
     },
     {
       "convoque": "Non",
-      "nom": "MOULIN AUBIN"
+      "nom": "KILIC Mirac"
     },
     {
       "convoque": "Non",
@@ -66,11 +66,11 @@
     },
     {
       "convoque": "Non",
-      "nom": "POUSSIER GASPARD"
+      "nom": "LECLERC Loucas"
     },
     {
       "convoque": "Non",
-      "nom": "PRUNIER LOEN"
+      "nom": "LORET Gabin"
     },
     {
       "convoque": "Non",
@@ -78,11 +78,35 @@
     },
     {
       "convoque": "Non",
-      "nom": "DEMIR OMER"
+      "nom": "MANSOURI Riyad"
+    },
+    {
+      "convoque": "Non",
+      "nom": "MORIN Evan"
+    },
+    {
+      "convoque": "Non",
+      "nom": "MOULIN Aubin"
+    },
+    {
+      "convoque": "Non",
+      "nom": "PRUNIER Loen"
+    },
+    {
+      "convoque": "Non",
+      "nom": "RATZEL Soen"
+    },
+    {
+      "convoque": "Non",
+      "nom": "SARAC Atahan"
+    },
+    {
+      "convoque": "Non",
+      "nom": "LEGUERNEY Mathéo"
     }
   ],
   "equipe": "U18 ",
-  "match_title": "A",
-  "match_date": "A",
-  "match_time": "A"
+  "match_title": "AS LA SELLE LA FORGE - AS VERSON",
+  "match_date": "19/09/2026",
+  "match_time": "15H30"
 }
