@@ -2,63 +2,87 @@
   "joueurs": [
     {
       "convoque": "Non",
-      "nom": "AUBERT LUCAS"
+      "nom": "ABAIDIA Ryad"
     },
     {
       "convoque": "Non",
-      "nom": "BENOIST LUCAS"
+      "nom": "AKTAS Emir"
     },
     {
       "convoque": "Non",
-      "nom": "BILLY ERNEST"
+      "nom": "AKTAS Mete"
     },
     {
       "convoque": "Non",
-      "nom": "COURSEAUX KILIAN"
+      "nom": "ALGHORY Mohammad"
     },
     {
       "convoque": "Non",
-      "nom": "DELIOT TITOUAN"
+      "nom": "CHIBANI Zyiad"
     },
     {
       "convoque": "Non",
-      "nom": "ESPANOCHE JUSTIN"
+      "nom": "DIANKOLELA Anthonin"
     },
     {
       "convoque": "Non",
-      "nom": "KILIC MIRAC"
+      "nom": "DUBREIL CLOUARD Judd"
     },
     {
       "convoque": "Non",
-      "nom": "LEGUERNEY MATHEO"
+      "nom": "ERGEBE Berat"
     },
     {
       "convoque": "Non",
-      "nom": "MORIN EVAN"
+      "nom": "KOSAR Enes"
     },
     {
       "convoque": "Non",
-      "nom": "PITEL LOUIS"
+      "nom": "LELARGE Nolan"
     },
     {
       "convoque": "Non",
-      "nom": "KARAKOC MUHAMMED ALI"
+      "nom": "NARDIN DESILE Marius"
     },
     {
       "convoque": "Non",
-      "nom": "EROL HAMZA "
+      "nom": "ONAL Ibrahim"
     },
     {
       "convoque": "Non",
-      "nom": "FRICHOT AURIANE"
+      "nom": "OZDAG Emir"
     },
     {
       "convoque": "Non",
-      "nom": "DUMAINE SARAH"
+      "nom": "OZDEMIR Eyup"
+    },
+    {
+      "convoque": "Non",
+      "nom": "PELLUET Oscar"
+    },
+    {
+      "convoque": "Non",
+      "nom": "SEBIRE Nathan"
+    },
+    {
+      "convoque": "Non",
+      "nom": "TANCRAY Mathis"
+    },
+    {
+      "convoque": "Non",
+      "nom": "TESLENKO Yelysei"
+    },
+    {
+      "convoque": "Non",
+      "nom": "YILDIZ Furkan"
+    },
+    {
+      "convoque": "Non",
+      "nom": "AYTAN Eyup"
     }
   ],
   "equipe": "U 15 ",
-  "match_title": "D",
-  "match_date": "D",
-  "match_time": "D"
+  "match_title": "SC DAMIGNY - AS LA SELLE LA FORGE",
+  "match_date": "19/09/2026",
+  "match_time": "15H15"
 }
