@@ -2,15 +2,7 @@
   "joueurs": [
     {
       "convoque": "Oui",
-      "nom": "LESELLIER Didier"
-    },
-    {
-      "convoque": "Oui",
       "nom": "LAINE LUDOVIC"
-    },
-    {
-      "convoque": "Oui",
-      "nom": "SCHARNITZKY STEPHANE"
     },
     {
       "convoque": "Oui",
@@ -29,16 +21,8 @@
       "nom": "LESELLIER MANUEL"
     },
     {
-      "convoque": "Oui",
-      "nom": "HAUSMANN STEPHANE"
-    },
-    {
       "convoque": "Non",
       "nom": "OSMOND Hervé "
-    },
-    {
-      "convoque": "Oui",
-      "nom": "LEBAILLY Teddy"
     },
     {
       "convoque": "Non",
@@ -53,15 +37,11 @@
       "nom": "CHENU Samuel"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "FILLET Philippe"
     },
     {
-      "convoque": "Oui",
-      "nom": "GRIPON Marco"
-    },
-    {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "NEVOUX Gwenael"
     }
   ],
