@@ -5,7 +5,7 @@
       "nom": "HILAIRE PAULINE"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "HILAIRE ANAELLE"
     },
     {
@@ -29,15 +29,15 @@
       "nom": "VANNIER Pauline"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "ZENITER Orane"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "CENIER Lola"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "LEROUX Marie-Lou"
     },
     {
@@ -45,11 +45,11 @@
       "nom": "CORBEAU Maude"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "CHEVALIER Celia"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "FRIGOT Justine"
     },
     {
@@ -61,7 +61,7 @@
       "nom": "RENAULT Léa "
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "LECONTE Manon"
     }
   ],
