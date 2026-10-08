@@ -6,11 +6,11 @@
     },
     {
       "convoque": "Oui",
-      "nom": "STEFFEN FRANCK"
+      "nom": "BAUCHERON MICKAEL"
     },
     {
       "convoque": "Oui",
-      "nom": "BAUCHERON MICKAEL"
+      "nom": "STEFFEN FRANCK"
     },
     {
       "convoque": "Oui",
@@ -37,7 +37,7 @@
       "nom": "CHENU Samuel"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "FILLET Philippe"
     },
     {
@@ -49,7 +49,7 @@
       "nom": "CHEDEVILLE Julien"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "TROLLEY Yann"
     },
     {
@@ -58,8 +58,8 @@
     }
   ],
   "equipe": "VETERANS",
-  "match_title": "PASSAIS / ASS",
-  "match_date": "25/09/2026",
+  "match_title": "ASS / CEAUCE",
+  "match_date": "09/10/2026",
   "match_time": "21h00",
-  "commentaire": "Au stade 19h45"
+  "commentaire": "Au stade 19h25 photo calendrier"
 }
