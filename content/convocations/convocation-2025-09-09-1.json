@@ -5,7 +5,7 @@
       "nom": "HILAIRE PAULINE"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "HILAIRE ANAELLE"
     },
     {
@@ -21,7 +21,7 @@
       "nom": "HAHN LOISE"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "NEVOUX LOUISE"
     },
     {
@@ -29,15 +29,15 @@
       "nom": "VANNIER Pauline"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "ZENITER Orane"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "CENIER Lola"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "LEROUX Marie-Lou"
     },
     {
@@ -45,7 +45,7 @@
       "nom": "CORBEAU Maude"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "CHEVALIER Celia"
     },
     {
@@ -53,7 +53,7 @@
       "nom": "FRIGOT Justine"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "FRICHOT Auriane"
     },
     {
@@ -61,11 +61,11 @@
       "nom": "RENAULT Léa "
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "LECONTE Manon"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "HEUVELINE Ninon"
     },
     {
@@ -74,8 +74,8 @@
     }
   ],
   "equipe": "SENIORS FEMININE",
-  "match_title": "US MELOISE / ASS",
-  "match_date": "02/10/2026",
-  "match_time": "20h00",
-  "commentaire": "Convocation au stade de la selle à 18h00\nChampionnat "
+  "match_title": "CARROUGES / ASS",
+  "match_date": "11/10/2026",
+  "match_time": "11h00",
+  "commentaire": "Convocation au stade de la selle à 9h15\nChampionnat "
 }
