@@ -2,6 +2,10 @@
   "joueurs": [
     {
       "convoque": "Oui",
+      "nom": "AUPEE LOUISA"
+    },
+    {
+      "convoque": "Oui",
       "nom": "HILAIRE PAULINE"
     },
     {
@@ -10,7 +14,7 @@
     },
     {
       "convoque": "Non",
-      "nom": "AUPEE LOUISA"
+      "nom": "HAHN LOISE"
     },
     {
       "convoque": "Oui",
@@ -18,18 +22,14 @@
     },
     {
       "convoque": "Oui",
-      "nom": "HAHN LOISE"
-    },
-    {
-      "convoque": "Non",
       "nom": "NEVOUX LOUISE"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "VANNIER Pauline"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "ZENITER Orane"
     },
     {
@@ -37,7 +37,7 @@
       "nom": "CENIER Lola"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "LEROUX Marie-Lou"
     },
     {
@@ -53,19 +53,19 @@
       "nom": "FRIGOT Justine"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "FRICHOT Auriane"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "RENAULT Léa "
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "LECONTE Manon"
     },
     {
-      "convoque": "Non",
+      "convoque": "Oui",
       "nom": "HEUVELINE Ninon"
     },
     {
@@ -73,13 +73,13 @@
       "nom": "MOULIN Ophelie"
     },
     {
-      "convoque": "Oui",
+      "convoque": "Non",
       "nom": "LANGLAIS Orlane"
     }
   ],
   "equipe": "SENIORS FEMININES",
-  "match_title": "GAS 2(L'Aigle-Le Sap)  / ASS",
-  "match_date": "08/11/2026",
-  "match_time": "12h30",
-  "commentaire": "Convocation au stade de la selle 10h15\nChampionnat "
+  "match_title": "ASS/ Haut du perche",
+  "match_date": "14/11/2026",
+  "match_time": "19h15",
+  "commentaire": "Convocation au stade de la selle 18h15\nChampionnat "
 }
